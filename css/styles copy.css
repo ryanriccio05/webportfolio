@@ -1,0 +1,16 @@
+th, td{
+  border: solid;
+  color: black;
+  text-align:center;
+  margin: 1px;
+  font-size: 1.1em;
+}
+
+li{
+  margin: 5px;
+}
+
+h3{
+  text-align: center;
+  font-size: 1.4em;
+}

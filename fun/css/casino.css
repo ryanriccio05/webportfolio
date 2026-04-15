@@ -1,0 +1,532 @@
+html {
+	min-height: 100%; 
+  background: linear-gradient(-20deg, rgba(25,20,44,0.9), rgba(60,53,86,0.9));
+}
+
+@font-face {
+font-family: 'AvantGarde-ExtraLight';
+src: url('https://d22j4fzzszoii2.cloudfront.net/images/fontlibrary/AvantGardeGothicLight.eot');
+src: url('https://d22j4fzzszoii2.cloudfront.net/images/fontlibrary/AvantGardeGothicLight.eot?#iefix') format('embedded-opentype'),
+url('https://d22j4fzzszoii2.cloudfront.net/images/fontlibrary/AvantGardeGothicLight.svg') format('svg'),
+url('https://d22j4fzzszoii2.cloudfront.net/images/fontlibrary/AvantGardeGothicLight.woff2') format('woff2'),
+url('https://d22j4fzzszoii2.cloudfront.net/images/fontlibrary/AvantGardeGothicLight.woff') format('woff'),
+url('https://d22j4fzzszoii2.cloudfront.net/images/fontlibrary/AvantGardeGothicLight.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+font-family: 'AvantGarde-Medium';
+src: url('https://d22j4fzzszoii2.cloudfront.net/images/fontlibrary/AvantGardeGothicMedium.eot');
+src: url('https://d22j4fzzszoii2.cloudfront.net/images/fontlibrary/AvantGardeGothicMedium.eot?#iefix') format('embedded-opentype'),
+url('https://d22j4fzzszoii2.cloudfront.net/images/fontlibrary/AvantGardeGothicMedium.svg') format('svg'),
+url('https://d22j4fzzszoii2.cloudfront.net/images/fontlibrary/AvantGardeGothicMedium.woff2') format('woff2'),
+url('https://d22j4fzzszoii2.cloudfront.net/images/fontlibrary/AvantGardeGothicMedium.woff') format('woff'),
+url('https://d22j4fzzszoii2.cloudfront.net/images/fontlibrary/AvantGardeGothicMedium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+font-family: 'AvantGarde-Demi';
+src: url('https://d22j4fzzszoii2.cloudfront.net/images/fontlibrary/AvantGardeGothicDemi.eot');
+src: url('https://d22j4fzzszoii2.cloudfront.net/images/fontlibrary/AvantGardeGothicDemi.eot?#iefix') format('embedded-opentype'),
+url('https://d22j4fzzszoii2.cloudfront.net/images/fontlibrary/AvantGardeGothicDemi.svg') format('svg'),
+url('https://d22j4fzzszoii2.cloudfront.net/images/fontlibrary/AvantGardeGothicDemi.woff2') format('woff2'),
+url('https://d22j4fzzszoii2.cloudfront.net/images/fontlibrary/AvantGardeGothicDemi.woff') format('woff'),
+url('https://d22j4fzzszoii2.cloudfront.net/images/fontlibrary/AvantGardeGothicDemi.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+font-family: 'AvantGarde-Bold';
+src: url('https://d22j4fzzszoii2.cloudfront.net/images/fontlibrary/AvantGardeGothicBlack.eot');
+src: url('https://d22j4fzzszoii2.cloudfront.net/images/fontlibrary/AvantGardeGothicBlack.eot?#iefix') format('embedded-opentype'),
+url('https://d22j4fzzszoii2.cloudfront.net/images/fontlibrary/AvantGardeGothicBlack.svg') format('svg'),
+url('https://d22j4fzzszoii2.cloudfront.net/images/fontlibrary/AvantGardeGothicBlack.woff2') format('woff2'),
+url('https://d22j4fzzszoii2.cloudfront.net/images/fontlibrary/AvantGardeGothicBlack.woff') format('woff'),
+url('https://d22j4fzzszoii2.cloudfront.net/images/fontlibrary/AvantGardeGothicBlack.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+#wrapper * {
+	-webkit-box-sizing: border-box; 
+	-moz-box-sizing: border-box; 
+	box-sizing: border-box;
+}
+
+#wrapper h1 {
+	font-family:'AvantGarde-Bold', sans-serif;
+	text-transform:uppercase;
+	color: #FFFFFF;
+	margin:0px;
+	padding:0px;
+	font-size:46px;
+	line-height:50px;
+}
+#wrapper h1 span{
+	font-family:'AvantGarde-ExtraLight', sans-serif;
+}
+
+#wrapper h2 {
+	font-family:'AvantGarde-Medium', sans-serif;
+	color: #FFFFFF;
+	margin:20px 75px 30px 75px;
+	padding:0px;
+	font-size:14px;
+	line-height:18px;
+	font-weight: normal;
+}
+
+#wrapper {
+	display: block;
+	width: 500px;
+	box-sizing: border-box;
+	margin: auto;
+	margin-top: 30px;
+	position: relative;
+}
+
+.card1{
+	position: absolute;
+	left: 50%;
+	margin-left: -129px;
+  animation: card1 ease 2s;
+  animation-iteration-count: 1;
+  transform-origin: 50% 50%;
+  animation-fill-mode:forwards; /*when the spec is finished*/
+  -webkit-animation: card1 ease 2s;
+  -webkit-animation-iteration-count: 1;
+  -webkit-transform-origin: 50% 50%;
+  -webkit-animation-fill-mode:forwards; /*Chrome 16+, Safari 4+*/ 
+  -moz-animation: card1 ease 2s;
+  -moz-animation-iteration-count: 1;
+  -moz-transform-origin: 50% 50%;
+  -moz-animation-fill-mode:forwards; /*FF 5+*/
+  -o-animation: card1 ease 2s;
+  -o-animation-iteration-count: 1;
+  -o-transform-origin: 50% 50%;
+  -o-animation-fill-mode:forwards; /*Not implemented yet*/
+  -ms-animation: card1 ease 2s;
+  -ms-animation-iteration-count: 1;
+  -ms-transform-origin: 50% 50%;
+  -ms-animation-fill-mode:forwards; /*IE 10+*/	
+}
+.card2{
+	position: absolute;
+	left: 50%;
+	margin-left: -83px;
+	top: 25px;
+	-ms-transform: rotate(15deg); /* IE 9 */
+    -webkit-transform: rotate(15deg); /* Chrome, Safari, Opera */
+    transform: rotate(15deg);
+  animation: card2 ease 2s;
+  animation-iteration-count: 1;
+  transform-origin: 50% 50%;
+  animation-fill-mode:forwards; /*when the spec is finished*/
+  -webkit-animation: card2 ease 2s;
+  -webkit-animation-iteration-count: 1;
+  -webkit-transform-origin: 50% 50%;
+  -webkit-animation-fill-mode:forwards; /*Chrome 16+, Safari 4+*/ 
+  -moz-animation: card2 ease 2s;
+  -moz-animation-iteration-count: 1;
+  -moz-transform-origin: 50% 50%;
+  -moz-animation-fill-mode:forwards; /*FF 5+*/
+  -o-animation: card2 ease 2s;
+  -o-animation-iteration-count: 1;
+  -o-transform-origin: 50% 50%;
+  -o-animation-fill-mode:forwards; /*Not implemented yet*/
+  -ms-animation: card2 ease 2s;
+  -ms-animation-iteration-count: 1;
+  -ms-transform-origin: 50% 50%;
+  -ms-animation-fill-mode:forwards; /*IE 10+*/	
+}
+.card3{
+	position: absolute;
+	right: 50%;
+	margin-right: -83px;	
+	top: 25px;
+	-ms-transform: rotate(-15deg); /* IE 9 */
+    -webkit-transform: rotate(-15deg); /* Chrome, Safari, Opera */
+    transform: rotate(-15deg);
+  animation: card3 ease 2s;
+  animation-iteration-count: 1;
+  transform-origin: 50% 50%;
+  animation-fill-mode:forwards; /*when the spec is finished*/
+  -webkit-animation: card3 ease 2s;
+  -webkit-animation-iteration-count: 1;
+  -webkit-transform-origin: 50% 50%;
+  -webkit-animation-fill-mode:forwards; /*Chrome 16+, Safari 4+*/ 
+  -moz-animation: card3 ease 2s;
+  -moz-animation-iteration-count: 1;
+  -moz-transform-origin: 50% 50%;
+  -moz-animation-fill-mode:forwards; /*FF 5+*/
+  -o-animation: card3 ease 2s;
+  -o-animation-iteration-count: 1;
+  -o-transform-origin: 50% 50%;
+  -o-animation-fill-mode:forwards; /*Not implemented yet*/
+  -ms-animation: card3 ease 2s;
+  -ms-animation-iteration-count: 1;
+  -ms-transform-origin: 50% 50%;
+  -ms-animation-fill-mode:forwards; /*IE 10+*/
+}
+.card4{
+	position: absolute;
+	left: 50%;
+	margin-left: -45px;
+	top: 60px;	
+	-ms-transform: rotate(30deg); /* IE 9 */
+    -webkit-transform: rotate(30deg); /* Chrome, Safari, Opera */
+    transform: rotate(30deg);
+  animation: card4 ease 2s;
+  animation-iteration-count: 1;
+  transform-origin: 50% 50%;
+  animation-fill-mode:forwards; /*when the spec is finished*/
+  -webkit-animation: card4 ease 2s;
+  -webkit-animation-iteration-count: 1;
+  -webkit-transform-origin: 50% 50%;
+  -webkit-animation-fill-mode:forwards; /*Chrome 16+, Safari 4+*/ 
+  -moz-animation: card4 ease 2s;
+  -moz-animation-iteration-count: 1;
+  -moz-transform-origin: 50% 50%;
+  -moz-animation-fill-mode:forwards; /*FF 5+*/
+  -o-animation: card4 ease 2s;
+  -o-animation-iteration-count: 1;
+  -o-transform-origin: 50% 50%;
+  -o-animation-fill-mode:forwards; /*Not implemented yet*/
+  -ms-animation: card4 ease 2s;
+  -ms-animation-iteration-count: 1;
+  -ms-transform-origin: 50% 50%;
+  -ms-animation-fill-mode:forwards; /*IE 10+*/
+}
+.card5{
+	position: absolute;
+	right: 50%;
+	margin-right: -45px;
+	top: 60px;	
+	-ms-transform: rotate(-30deg); /* IE 9 */
+    -webkit-transform: rotate(-30deg); /* Chrome, Safari, Opera */
+    transform: rotate(-30deg);	
+  animation: card5 ease 2s;
+  animation-iteration-count: 1;
+  transform-origin: 50% 50%;
+  animation-fill-mode:forwards; /*when the spec is finished*/
+  -webkit-animation: card5 ease 2s;
+  -webkit-animation-iteration-count: 1;
+  -webkit-transform-origin: 50% 50%;
+  -webkit-animation-fill-mode:forwards; /*Chrome 16+, Safari 4+*/ 
+  -moz-animation: card5 ease 2s;
+  -moz-animation-iteration-count: 1;
+  -moz-transform-origin: 50% 50%;
+  -moz-animation-fill-mode:forwards; /*FF 5+*/
+  -o-animation: card5 ease 2s;
+  -o-animation-iteration-count: 1;
+  -o-transform-origin: 50% 50%;
+  -o-animation-fill-mode:forwards; /*Not implemented yet*/
+  -ms-animation: card5 ease 2s;
+  -ms-animation-iteration-count: 1;
+  -ms-transform-origin: 50% 50%;
+  -ms-animation-fill-mode:forwards; /*IE 10+*/
+}
+
+.content{
+	width: 500px;
+	position: absolute;
+	top: 150px;
+	left: 50%;
+	margin-left:-250px;
+	text-align:center; 
+  animation: content ease 2s;
+  animation-iteration-count: 1;
+  transform-origin: 50% 50%;
+  animation-fill-mode:forwards; /*when the spec is finished*/
+  -webkit-animation: content ease 2s;
+  -webkit-animation-iteration-count: 1;
+  -webkit-transform-origin: 50% 50%;
+  -webkit-animation-fill-mode:forwards; /*Chrome 16+, Safari 4+*/ 
+  -moz-animation: content ease 2s;
+  -moz-animation-iteration-count: 1;
+  -moz-transform-origin: 50% 50%;
+  -moz-animation-fill-mode:forwards; /*FF 5+*/
+  -o-animation: content ease 2s;
+  -o-animation-iteration-count: 1;
+  -o-transform-origin: 50% 50%;
+  -o-animation-fill-mode:forwards; /*Not implemented yet*/
+  -ms-animation: content ease 2s;
+  -ms-animation-iteration-count: 1;
+  -ms-transform-origin: 50% 50%;
+  -ms-animation-fill-mode:forwards; /*IE 10+*/
+}
+
+.text{
+	width: 370px;
+}
+
+.button {
+	font-family:'AvantGarde-Demi', sans-serif;
+	color: #FFFFFF;
+	margin: 0px;
+	padding:12px;
+	background-color: #2986cc;
+	font-size:14px;
+	line-height:16px;
+	text-decoration:none;
+	text-transform:uppercase;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+#wrapper .button:hover {
+	background-color: #4f4a6e;
+}
+
+#wrapper .nothanks {
+	font-family:'AvantGarde-Medium', sans-serif;
+	color: #FFFFFF;
+	margin: 0px;
+	padding:0px;
+	font-size:10px;
+	line-height:14px;
+	text-decoration:none;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+#wrapper .nothanks:hover {
+	text-decoration:underline;
+}
+
+.exit{
+	text-decoration: none;
+	font-family:'AvantGarde-ExtraLight', sans-serif;
+	color: #FFFFFF;
+	margin:0px;
+	padding:0px;
+	font-size:46px;
+	line-height:46px;
+	position: absolute;
+	top: -155px;
+	right: 85px;
+	transition: all .3s ease-in-out;
+}
+
+#wrapper .exit:hover { 
+  opacity: .3;
+}
+
+
+@media screen and (max-width: 400px) {
+	
+.osr-content {
+	width: 100%!important;
+}
+
+#wrapper {
+	width: 100%;
+}
+
+.content{
+	width: 220px;
+	position: absolute;
+	top: 60px;
+	left: 50%;
+	margin-left:-110px;
+	text-align:center; 
+}
+
+#wrapper h1 {
+	font-size:36px;
+	line-height:40px;
+}
+#wrapper h1 span{
+	font-size:54px;
+	line-height:60px;
+}
+
+#wrapper h2 {
+	font-size:14px;
+	line-height:16px;
+	font-weight: normal;
+	margin:20px 0px 30px 0px;
+}
+
+.card2{
+	display:none;
+}
+.card3{
+	display:none;
+}
+.card4{
+	display:none;
+}
+.card5{
+	display:none;
+}
+
+.exit{
+	top: -110px;
+	right: -20px;
+}
+	
+	
+}
+@keyframes card1{
+  0% {opacity:0; transform:  translate(0px,-25px);}
+  25% {opacity:1; transform:  translate(0px,0px);}
+  100% {opacity:1; transform:  translate(0px,0px);}
+}
+@-moz-keyframes card1{
+  0% {opacity:0; -moz-transform:  translate(0px,-25px);}
+  25% {opacity:1; -moz-transform:  translate(0px,0px);}
+  100% {opacity:1; -moz-transform:  translate(0px,0px);}
+}
+@-webkit-keyframes card1{
+  0% {opacity:0; -webkit-transform:  translate(0px,-25px);}
+  25% {opacity:1; -webkit-transform:  translate(0px,0px);}
+  100% {opacity:1; -webkit-transform:  translate(0px,0px);}
+}
+@-o-keyframes card1{
+  0% {opacity:0; -o-transform:  translate(0px,-25px);}
+  25% {opacity:1; -o-transform:  translate(0px,0px);}
+  100% {opacity:1; -o-transform:  translate(0px,0px);}
+}
+@-ms-keyframes card1{
+  0% {opacity:0; -ms-transform:  translate(0px,-25px);}
+  25% {opacity:1; -ms-transform:  translate(0px,0px);}
+  100% {opacity:1; -ms-transform:  translate(0px,0px);}
+}
+
+@keyframes card2{
+  0% {opacity:0; transform:  translate(-46px,-50px) rotate(0deg);}
+  25% {opacity:1; transform:  translate(-46px,-25px) rotate(0deg);}
+  100% {opacity:1; transform:  translate(0px,0px) rotate(15deg);}
+}
+@-moz-keyframes card2{
+  0% {opacity:0; -moz-transform:  translate(-46px,-50px) rotate(0deg);}
+  25% {opacity:1; -moz-transform:  translate(-46px,-25px) rotate(0deg);}
+  100% {opacity:1; -moz-transform:  translate(0px,0px) rotate(15deg);}
+}
+@-webkit-keyframes card2{
+  0% {opacity:0; -webkit-transform:  translate(-46px,-50px) rotate(0deg);}
+  25% {opacity:1; -webkit-transform:  translate(-46px,-25px) rotate(0deg);}
+  100% {opacity:1; -webkit-transform:  translate(0px,0px) rotate(15deg);}
+}
+@-o-keyframes card2{
+  0% {opacity:0; -o-transform:  translate(-46px,-50px) rotate(0deg);}
+  25% {opacity:1; -o-transform:  translate(-46px,-25px) rotate(0deg);}
+  100% {opacity:1; -o-transform:  translate(0px,0px) rotate(15deg);}
+}
+@-ms-keyframes card2{
+  0% {opacity:0; -ms-transform:  translate(-46px,-50px) rotate(0deg);}
+  25% {opacity:1; -ms-transform:  translate(-46px,-25px) rotate(0deg);}
+  100% {opacity:1; -ms-transform:  translate(0px,0px) rotate(15deg);}
+}
+
+@keyframes card3{
+  0% {opacity:0; transform:  translate(46px,-50px) rotate(0deg);}
+  25% {opacity:1; transform:  translate(46px,-25px) rotate(0deg);}
+  100% {opacity:1; transform:  translate(0px,0px) rotate(-15deg);}
+}
+@-moz-keyframes card3{
+  0% {opacity:0; -moz-transform:  translate(46px,-50px) rotate(0deg);}
+  25% {opacity:1; -moz-transform:  translate(46px,-25px) rotate(0deg);}
+  100% {opacity:1; -moz-transform:  translate(0px,0px) rotate(-15deg);}
+}
+@-webkit-keyframes card3{
+  0% {opacity:0; -webkit-transform:  translate(46px,-50px) rotate(0deg);}
+  25% {opacity:1; -webkit-transform:  translate(46px,-25px) rotate(0deg);}
+  100% {opacity:1; -webkit-transform:  translate(0px,0px) rotate(-15deg);}
+}
+@-o-keyframes card3{
+  0% {opacity:0; -o-transform:  translate(46px,-50px) rotate(0deg);}
+  25% {opacity:1; -o-transform:  translate(46px,-25px) rotate(0deg);}
+  100% {opacity:1; -o-transform:  translate(0px,0px) rotate(-15deg);}
+}
+@-ms-keyframes card3{
+  0% {opacity:0; -ms-transform:  translate(46px,-50px) rotate(0deg);}
+  25% {opacity:1; -ms-transform:  translate(46px,-25px) rotate(0deg);}
+  100% {opacity:1; -ms-transform:  translate(0px,0px) rotate(-15deg);}
+}
+
+@keyframes card4{
+  0% {opacity:0; transform:  translate(-84px,-85px) rotate(0deg);}
+  25% {opacity:1; transform:  translate(-84px,-60px) rotate(0deg);}
+  100% {opacity:1; transform:  translate(0px,0px) rotate(30deg);}
+}
+@-moz-keyframes card4{
+  0% {opacity:0; -moz-transform:  translate(-84px,-85px) rotate(0deg);}
+  25% {opacity:1; -moz-transform:  translate(-84px,-60px) rotate(0deg);}
+  100% {opacity:1; -moz-transform:  translate(0px,0px) rotate(30deg);}
+}
+@-webkit-keyframes card4{
+  0% {opacity:0; -webkit-transform:  translate(-84px,-85px) rotate(0deg);}
+  25% {opacity:1; -webkit-transform:  translate(-84px,-60px) rotate(0deg);}
+  100% {opacity:1; -webkit-transform:  translate(0px,0px) rotate(30deg);}
+}
+@-o-keyframes card4{
+  0% {opacity:0; -o-transform:  translate(-84px,-85px) rotate(0deg);}
+  25% {opacity:1; -o-transform:  translate(-84px,-60px) rotate(0deg);}
+  100% {opacity:1; -o-transform:  translate(0px,0px) rotate(30deg);}
+}
+@-ms-keyframes card4{
+  0% {opacity:0; -ms-transform:  translate(-84px,-85px) rotate(0deg);}
+  25% {opacity:1; -ms-transform:  translate(-84px,-60px) rotate(0deg);}
+  100% {opacity:1; -ms-transform:  translate(0px,0px) rotate(30deg);}
+}
+
+@keyframes card5{
+  0% {opacity:0; transform:  translate(84px,-85px) rotate(0deg);}
+  25% {opacity:1; transform:  translate(84px,-60px) rotate(0deg);}
+  100% {opacity:1; transform:  translate(0px,0px) rotate(-30deg);}
+}
+@-moz-keyframes card5{
+  0% {opacity:0; -moz-transform:  translate(84px,-85px) rotate(0deg);}
+  25% {opacity:1; -moz-transform:  translate(84px,-60px) rotate(0deg);}
+  100% {opacity:1; -moz-transform:  translate(0px,0px) rotate(-30deg);}
+}
+@-webkit-keyframes card5{
+  0% {opacity:0; -webkit-transform:  translate(84px,-85px) rotate(0deg);}
+  25% {opacity:1; -webkit-transform:  translate(84px,-60px) rotate(0deg);}
+  100% {opacity:1; -webkit-transform:  translate(0px,0px) rotate(-30deg);}
+}
+@-o-keyframes card5{
+  0% {opacity:0; -o-transform:  translate(84px,-85px) rotate(0deg);}
+  25% {opacity:1; -o-transform:  translate(84px,-60px) rotate(0deg);}
+  100% {opacity:1; -o-transform:  translate(0px,0px) rotate(-30deg);}
+}
+@-ms-keyframes card5{
+  0% {opacity:0; -ms-transform:  translate(84px,-85px) rotate(0deg);}
+  25% {opacity:1; -ms-transform:  translate(84px,-60px) rotate(0deg);}
+  100% {opacity:1; -ms-transform:  translate(0px,0px) rotate(-30deg);}
+}
+
+@keyframes content{
+  0% {opacity:0; transform:  translate(0px,-25px);}
+  50% {opacity:0; transform:  translate(0px,-25px);}
+  100% {opacity:1; transform:  translate(0px,0px);}
+}
+@-moz-keyframes content{
+  0% {opacity:0; -moz-transform:  translate(0px,-25px);}
+  50% {opacity:0; -moz-transform:  translate(0px,-25px);}
+  100% {opacity:1; -moz-transform:  translate(0px,0px);}
+}
+@-webkit-keyframes content{
+  0% {opacity:0; -webkit-transform:  translate(0px,-25px);}
+  50% {opacity:0; -webkit-transform:  translate(0px,-25px);}
+  100% {opacity:1; -webkit-transform:  translate(0px,0px);}
+}
+@-o-keyframes content{
+  0% {opacity:0; -o-transform:  translate(0px,-25px);}
+  50% {opacity:0; -o-transform:  translate(0px,-25px);}
+  100% {opacity:1; -o-transform:  translate(0px,0px);}
+}
+@-ms-keyframes content{
+  0% {opacity:0; -ms-transform:  translate(0px,-25px);}
+  50% {opacity:0; -ms-transform:  translate(0px,-25px);}
+  100% {opacity:1; -ms-transform:  translate(0px,0px);}
+}

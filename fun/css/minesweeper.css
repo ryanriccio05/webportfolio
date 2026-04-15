@@ -1,0 +1,182 @@
+/* Emacs settings: -*- mode: Fundamental; tab-width: 4; -*-
+
+////////////////////////////////////////////////////////////////////////////
+//                                                                        //
+// Minesweeper: stylesheet                                                //
+//                                                                        //
+// Copyright 1998-2016, Andrew D. Birrell                                 //
+//                                                                        //
+////////////////////////////////////////////////////////////////////////////
+
+*/
+
+
+body {
+	margin: 0px;
+	padding: 0px;
+	text-align: center;
+	background-color: #666666;
+	background-image: url("../pics/xp.jpg");
+    background-size: cover;
+	color: #ffffff;
+}
+a:link		{ color: #ccccff }
+a:active	{ color: #993333 }
+a:visited	{ color: #ccccff }
+a:hover		{ color: #ffff00 }
+.main {
+	display: inline-block;
+	text-align: left;
+}
+.limited {
+	max-width: 36em;
+}
+#sqTable {
+	margin: 0;
+	border-spacing: 0px;
+	background-color: #666666;
+	color: #000000;
+	user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	-o-user-select: none;
+	-webkit-user-select: none;
+}
+.sq, .score {
+	margin: 0px;
+	border: 2px solid;
+	border-color: #eeeeee #999999 #999999 #eeeeee;
+	background-color: #cccccc;
+	padding: 0px;
+	vertical-align: middle;
+	text-align: center;
+}
+.sq {
+	box-sizing: border-box; /* avoids jumpiness when zoomed */
+	width: 24px;
+	max-width: 24px; /* avoids being resized if text is too long (iOS) */
+	min-width: 24px;
+	height: 24px;
+	min-height: 24px;
+	max-height: 24px;
+	font-size: 16px;
+	font-weight: 1000;
+	line-height: 18px;
+	cursor: pointer;
+	font-family:"Pixelated MS Sans Serif" !important;
+}
+.sqExposed {
+	background-color: #bbbbbb;
+	border-width: 1px;
+	border-color: #999999;
+	padding: 1px;
+	cursor: default;
+}
+.sqExploded, .sqIncorrect {
+	color: #ff0000;
+}
+.sq1 {
+	color: #3333cc;
+}
+.sq2 {
+	color: #006600;
+}
+.sq3 {
+	color: #cc0000;
+}
+.sq4 {
+	color: #660066;
+}
+.sq5 {
+	color: #006666;
+}
+/* sq0, sq6, sq7, and sq8 use basic black */
+div.counter {
+	margin: 10px;
+	border: 1px inset #eeeeee;
+	padding-right: 3px;
+	width: 1.75em;
+	background-color: #000000;
+	color: #ff6666;
+	font-size: 24px;
+	font-weight: bold;
+	line-height: 1;
+	text-align: right;
+}
+#mines {
+	float: left;
+	font-family:"Pixelated MS Sans Serif" !important;
+	font-weight:800;
+	font-style:normal;
+}
+#timer {
+	float: right;
+	font-family:"Pixelated MS Sans Serif" !important;
+	font-weight:800;
+	font-style:normal;
+}
+#smiley {
+	width: 32px;
+	height: 32px;
+	margin: 2px;
+	border: 3px groove transparent;
+	padding: 0;
+	vertical-align: middle;
+	cursor: pointer;
+}
+
+.windows-taskbar {
+
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+
+
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 40px;
+    background-color: #2A55D2;
+    background: linear-gradient(to bottom, #245edb 0%, #3f8cf3 9%, #245edb 18%, #245edb 92%, #333 100%) center/cover no-repeat;
+    overflow: hidden;
+}
+
+.start-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #449346;
+    background: linear-gradient(180deg, #1a3e1a 0%, #396d38 15%, #1e951f 87%, #1e771f 100%);
+    width: 100px;
+    height: 110%;
+    border-radius: 0 17px 17px 0;
+    border: 1px solid #1c631b;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.54);
+
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.1em;
+    font-style: italic;
+    text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.54), 1px -1px 5px rgba(101, 98, 47, 0.52);
+    letter-spacing: .1em;
+
+}
+
+.start-button h2 {
+    margin-bottom: 15px;
+}
+
+.notification-center {
+    background-color: #13a4eb;
+    background: linear-gradient(180deg, #13a4eb 0%, #1290e9 5%, #129cee 94%, #129dee 100%);
+    border-left: 1px solid #0f4575;
+	margin-left: 10px;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	padding: 0 10px;
+	box-sizing: border-box;
+}
