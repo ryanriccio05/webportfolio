@@ -15,45 +15,12 @@
     </head>
     <body>
         <div class="d-flex" id="wrapper">
-            <!-- Sidebar-->
-            <div class="border-end bg-white" id="sidebar-wrapper">
-                <div class="sidebar-heading border-bottom bg-light">Web Portfolio - <i class="fa fa-calendar"></i></div>
-                <div class="list-group list-group-flush">
-                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="index.html">Home</a>
-                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="info.html">Information</a>
-                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="links.html">Links</a>
-                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="classes.html">Classes</a>
-                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="calendar.html">Calendar</a>
-                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="assignments.html">Assignments</a>
-                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="resume.html">Resume</a>
-                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="https://vuminorproblem.netlify.app" target="_blank">Acapella Site</a>
-                </div>
-            </div>
+            <!-- Shared sidebar-->
+            <div data-site-include="site-sidebar" data-page-icon="fa-calendar"></div>
             <!-- Page content wrapper-->
             <div id="page-content-wrapper">
-                <!-- Top navigation-->
-                <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
-                    <div class="container-fluid">
-                        <button class="btn btn-primary" id="sidebarToggle">Toggle Menu</button>
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                            <ul class="navbar-nav ms-auto mt-2 mt-lg-0">
-                                <li class="nav-item active"><a class="nav-link" href="about.html">About</a></li>
-                                <li class="nav-item"><a class="nav-link" href="https://www1.villanova.edu/university.html" target="_blank">My School</a></li>
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Projects</a>
-                                    <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-                                        <a class="dropdown-item" href="jokes.html">Jokes</a>
-                                        <a class="dropdown-item" href="https://rriccio-sudoku.netlify.app/" target="_blank">Sudoku</a>
-                                        <a class="dropdown-item" href="https://rriccio-tictactoe.netlify.app/" target="_blank">TicTacToe Guide</a>
-                                        <a class="dropdown-item" href="https://simplesterms.netlify.app" target="_blank">SimplesTerms AI</a>
-                                        <a class="dropdown-item" href="https://smartgpa.onrender.com" target="_blank">SmartGPA</a>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </nav>
+                <!-- Shared top navigation-->
+                <div data-site-include="site-header"></div>
                 <!-- Page content-->
                 <div class="container-fluid" style="background: linear-gradient(rgba(255,255,255,.9), rgba(255,255,255,.9)), url('assets/1599835358128.jpg'); 
                 background-repeat: no-repeat; background-position: center;" >

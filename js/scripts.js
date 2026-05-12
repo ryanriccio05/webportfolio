@@ -3,13 +3,41 @@
 * Copyright 2013-2023 Start Bootstrap
 * Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-simple-sidebar/blob/master/LICENSE)
 */
-// 
+//
 // Scripts
-// 
+//
 
-window.addEventListener('DOMContentLoaded', event => {
+async function loadSiteShell() {
+    const includeTargets = document.querySelectorAll("[data-site-include]");
+    if (!includeTargets.length) {
+        return;
+    }
 
-    // Toggle the side navigation
+    const response = await fetch("components/site-shell.html");
+    const html = await response.text();
+    const componentDocument = new DOMParser().parseFromString(html, "text/html");
+
+    includeTargets.forEach(target => {
+        const template = componentDocument.getElementById(target.dataset.siteInclude);
+        if (!template) {
+            return;
+        }
+
+        const content = template.content.cloneNode(true);
+        const pageIcon = target.dataset.pageIcon;
+        const iconTarget = content.querySelector(".page-icon");
+
+        if (pageIcon && iconTarget) {
+            iconTarget.innerHTML = ` - <i class="fa ${pageIcon}"></i>`;
+        } else if (iconTarget) {
+            iconTarget.remove();
+        }
+
+        target.replaceWith(content);
+    });
+}
+
+function initSidebarToggle() {
     const sidebarToggle = document.body.querySelector('#sidebarToggle');
     if (sidebarToggle) {
         // Uncomment Below to persist sidebar toggle between refreshes
@@ -22,13 +50,19 @@ window.addEventListener('DOMContentLoaded', event => {
             localStorage.setItem('sb|sidebar-toggle', document.body.classList.contains('sb-sidenav-toggled'));
         });
     }
+}
 
+window.addEventListener('DOMContentLoaded', async () => {
+    await loadSiteShell();
+    initSidebarToggle();
 });
 
 var clockElement = document.getElementById('clock');
                     
                         function clock() {
-                            clockElement.textContent = new Date().toLocaleString();
+                            if (clockElement) {
+                                clockElement.textContent = new Date().toLocaleString();
+                            }
                         }
                     
                         setInterval(clock, 100);
