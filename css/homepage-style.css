@@ -507,7 +507,7 @@ a {
 .project-strip {
     background:
         linear-gradient(135deg, rgba(18, 40, 76, 0.96), rgba(34, 76, 126, 0.92)),
-        url("assets/wildcat.png") center / cover;
+        url("../assets/wildcat.png") center / cover;
     color: var(--white);
 }
 
