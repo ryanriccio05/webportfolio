@@ -3,123 +3,346 @@
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="Web Schedule Project" />
+        <meta name="description" content="Ryan Riccio's personal web portfolio, academic hub, projects, links, calendar, assignments, and resume." />
         <meta name="author" content="Ryan Riccio" />
         <title>Web Portfolio</title>
-        <!-- Favicon-->
         <link rel="icon" href="assets/5027360.png">
-        <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
         <link href="css/styles copy.css" rel="stylesheet"/>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="css/homepage-style.css" rel="stylesheet" />
     </head>
     <body>
-        <div class="d-flex" id="wrapper">
-            <!-- Sidebar-->
-            <div class="border-end bg-white" id="sidebar-wrapper">
-                <div class="sidebar-heading border-bottom bg-light">Web Portfolio - <i class="fa fa-home"></i></div>
-                <div class="list-group list-group-flush">
-                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="index.html">Home</a>
-                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="info.html">Information</a>
-                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="links.html">Links</a>
-                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="classes.html">Classes</a>
-                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="calendar.html">Calendar</a>
-                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="assignments.html">Assignments</a>
-                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="resume.html">Resume</a>
-                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="https://vuminorproblem.netlify.app" target="_blank">Acapella Site</a>
+        <main class="site-shell">
+            <nav class="portfolio-nav" aria-label="Main navigation">
+                <div class="nav-inner">
+                    <a class="brand-mark" href="index.html" aria-label="Ryan Riccio home">
+                        <img src="assets/headshot.png" alt="Ryan Riccio">
+                        <span>Ryan Riccio</span>
+                    </a>
+                    <div class="nav-links">
+                        <a href="info.html">Information</a>
+                        <a href="links.html">Links</a>
+                        <a href="classes.html">Classes</a>
+                        <a href="calendar.html">Calendar</a>
+                        <a href="assignments.html">Assignments</a>
+                        <a href="resume.html">Resume</a>
+                    </div>
                 </div>
-            </div>
-            <!-- Page content wrapper-->
-            <div id="page-content-wrapper">
-                <!-- Top navigation-->
-                <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
-                    <div class="container-fluid">
-                        <button class="btn btn-primary" id="sidebarToggle">Toggle Menu</button>
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                            <ul class="navbar-nav ms-auto mt-2 mt-lg-0">
-                                <li class="nav-item active"><a class="nav-link" href="about.html">About</a></li>
-                                <li class="nav-item"><a class="nav-link" href="https://www1.villanova.edu/university.html" target="_blank">My School</a></li>
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Projects</a>
-                                    <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-                                        <a class="dropdown-item" href="jokes.html">Jokes</a>
-                                        <a class="dropdown-item" href="https://rriccio-sudoku.netlify.app/" target="_blank">Sudoku</a>
-                                        <a class="dropdown-item" href="https://rriccio-tictactoe.netlify.app/" target="_blank">TicTacToe Guide</a>
-                                        <a class="dropdown-item" href="https://simplesterms.netlify.app" target="_blank">SimplesTerms AI</a>
-                                        <a class="dropdown-item" href="https://smartgpa.onrender.com" target="_blank">SmartGPA</a>
-                                    </div>
-                                </li>
-                            </ul>
+            </nav>
+
+            <section class="hero" aria-labelledby="hero-title">
+                <div class="hero-content">
+                    <div class="eyebrow"><span class="status-dot"></span> Personal website and academic hub</div>
+                    <h1 id="hero-title">Ryan Riccio's <br><span>Web Portfolio</span></h1>
+                    <div class="interest-line" aria-live="polite">
+                        <span class="interest-label">Interested in&nbsp;</span>
+                        <span class="typed-interest"></span>
+                        <span class="typing-cursor" aria-hidden="true"></span>
+                    </div>
+                    <p class="hero-copy">
+                        This website brings together my academic schedule, class resources, project demonstrations, relevant experience, and resume in one fast, polished place.
+                    </p>
+                    <div class="hero-actions">
+                        <a class="btn-main" href="resume.html"><i class="fa fa-file-text-o" aria-hidden="true"></i>View Resume</a>
+                        <a class="btn-main" href="https://github.com/ryanriccio05/" target="_blank"><i class="fa fa-github" aria-hidden="true"></i>View GitHub Profile</a>
+                        <a class="btn-main" href="mailto:rriccio@villanova.edu" target="_blank"><i class="fa fa-envelope" aria-hidden="true"></i>Contact Me</a>
+                    </div>
+                    <div class="stats-row" aria-label="Portfolio highlights">
+                        <div class="stat">
+                            <strong>10+</strong>
+                            <span>Core pages organized around my academic workflow</span>
+                        </div>
+                        <div class="stat">
+                            <strong>7</strong>
+                            <span>Live projects and coding demonstrations connected to one website - with more coming!</span>
+                        </div>
+                        <div class="stat">
+                            <strong>24/7</strong>
+                            <span>Uptime and access to all resources, projects, and information, with frequent updates</span>
                         </div>
                     </div>
-                </nav>
-                <!--        PAGE CONTENT        -->
-                <div class="container-fluid" style="background: linear-gradient(rgba(255,255,255,.9), rgba(255,255,255,.9)), url('assets/Villanova_Wildcats_logo.svg'); 
-                background-repeat: no-repeat; background-position: center;" >
-                    <div class="col"><p style="text-align: right; margin-right: 10px; font-size: 0.7em;">Made by Ryan Riccio</p></div>
+                </div>
 
-                    <h1 style="text-align: center;">Home</h1>
-                    
-                    <div class= "border border-dark span12 text-center">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="23" fill="currentColor" class="bi bi-clock" viewBox="0 2.5 16 16">
-                            <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71z"/>
-                            <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0"/>
-                          </svg>
-                    <span id="clock" style="font-size: 1.3em;"></span> 
-                    
+                <div class="showcase" aria-label="Photo slideshow">
+                    <div class="slideshow">
+                        <div class="slide portrait active">
+                            <img src="assets/ryan-riccio-picture.jpg" alt="Ryan Riccio portrait">
+                            <div class="slide-caption">
+                                <p>About Me</p>
+                                <h2>Critical Thinker, Results-Driven Builder, Leader</h2>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <img src="assets/ccb7759f-56fb-49c0-8f38-93742c56b003.png" alt="Villanova campus">
+                            <div class="slide-caption">
+                                <p>My School</p>
+                                <h2>Villanova Class of '27</h2>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <img src="assets/voxelchurch.png" alt="Creative church model project">
+                            <div class="slide-caption">
+                                <p>My Academic Journey</p>
+                                <h2>Computer Science Major; Pursuing Cybersecurity Minor</h2>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <img src="assets/lambda-img.jpg" alt="Villanova visual">
+                            <div class="slide-caption">
+                                <p>Leadership</p>
+                                <h2>Lifeguard Captain, Lambda Chi Alpha Kappa Chair</h2>
+                            </div>
+                        </div>
+                        <div class="slide-controls" aria-label="Slideshow controls">
+                            <button class="slide-btn" type="button" id="prevSlide" aria-label="Previous slide"><i class="fa fa-chevron-left" aria-hidden="true"></i></button>
+                            <button class="slide-btn" type="button" id="nextSlide" aria-label="Next slide"><i class="fa fa-chevron-right" aria-hidden="true"></i></button>
+                        </div>
+                        <div class="slide-dots" aria-label="Choose slide"></div>
                     </div>
-                
-                <table style="border: solid; text-align: center; margin: 0px auto; table-layout: fixed;">
-                    <tr>
-                        <td>Monday</td>
-                        <td>Tuesday</td>
-                        <td>Wednesday</td>
-                        <td>Thursday</td>
-                        <td>Friday</td>
-                    </tr>
-                    <tr>
-                        <td><input type="checkbox" name="class">
-                            <label for="class">Introduction to Criminology (12:50-1:40)</label><br></td>
-                        <td><input type="checkbox" name="class">
-                            <label for="class">Software Engineering (11:30-12:45)</label><br></td>
-                        <td><input type="checkbox" name="class">
-                            <label for="class">Introduction to Criminology (12:50-1:40)</label><br></td>
-                        <td><input type="checkbox" name="class">
-                            <label for="class">Software Engineering (11:30-12:45)</label><br></td>
-                        <td><input type="checkbox" name="class">
-                            <label for="class">Introduction to Criminology (12:50-1:40)</label><br></td>      
-                    </tr>
-                    <tr>
-                        <td><input type="checkbox" name="class">
-                            <label for="class">THM: Solidarity and Peacebuilding (1:55-3:10)</label><br></td>
-                        <td><input type="checkbox" name="class">
-                            <label for="class">Overview of Cybersecurity (4:00-5:15)</label><br></td>
-                        <td><input type="checkbox" name="class">
-                            <label for="class">THM: Solidarity and Peacebuilding (1:55-3:10)</label><br></td>
-                        <td><input type="checkbox" name="class">
-                            <label for="class">Overview of Cybersecurity (4:00-5:15)</label><br></td>
-                        <td>
-                            <label for="class"></label><br></td>      
-                    </tr>
-                    <tr>
-                        <td><input type="checkbox" name="class">
-                            <label for="class">Computer Ethics (3:20-4:35)</label><br></td>
-                        <td>
-                            <label for="class"></label><br></td>
-                        <td><input type="checkbox" name="class">
-                            <label for="class">Computer Ethics (3:20-4:35)</label><br></td>
-                        <td>
-                            <label for="class"></label><br></td>
-                        <td>
-                            <label for="class"></label><br></td>      
-                    </tr>
-                    </table>
-                    <br><br><br><br><br>
+                </div>
+            </section>
+
+            <section class="feature-band" aria-labelledby="features-title">
+                <div class="section-inner">
+                    <div class="section-heading">
+                        <h2 id="features-title">Important Pages</h2>
+                        <p>Commonly used and updated pages along with quick explanations and access links.</p>
                     </div>
-        <!-- Bootstrap core JS-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-        <!-- Core theme JS-->
-        <script src="js/scripts.js"></script>
+                    <div class="feature-grid">
+                        <article class="feature-card">
+                            <div class="feature-icon"><i class="fa fa-info" aria-hidden="true"></i></div>
+                            <h3>Information</h3>
+                            <p>An informational page of academic details, references, and other relevant context.</p>
+                            <a href="info.html">Open information page</a>
+                        </article>
+                        <article class="feature-card">
+                            <div class="feature-icon"><i class="fa fa-calendar" aria-hidden="true"></i></div>
+                            <h3>Calendar</h3>
+                            <p>Live google calendar integration for scheduling and keeping track of important events.</p>
+                            <a href="calendar.html">Open calendar page</a>
+                        </article>
+                        <article class="feature-card">
+                            <div class="feature-icon"><i class="fa fa-graduation-cap" aria-hidden="true"></i></div>
+                            <h3>Classes</h3>
+                            <p>Semesterly archive of course details, materials, and syllabi for ease of access.</p>
+                            <a href="classes.html">Open classes page</a>
+                        </article>
+                        <article class="feature-card">
+                            <div class="feature-icon"><i class="fa fa-tasks" aria-hidden="true"></i></div>
+                            <h3>Assignments</h3>
+                            <p>Live tracking of assignment due dates and submission status during the semester.</p>
+                            <a href="assignments.html">Open assignments page</a>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <section class="project-strip" aria-labelledby="projects-title">
+                <div class="section-inner project-layout">
+                    <div>
+                        <h2 id="projects-title">Featured Projects</h2>
+                        <p>
+                            A showcase of some of my latest work, including personal projects, academic endeavors, and collaborative efforts.
+                        </p>
+                    </div>
+                    <div class="project-links">
+                        <a class="project-link" href="vuminorproblem.netlify.app" target="_blank" rel="noreferrer">
+                            <strong>A Cappella Website</strong>
+                            <span>Informational website for my college a cappella group, frequently updated with news and event information.</span>
+                        </a>
+                        <a class="project-link" href="https://simplesterms.netlify.app" target="_blank" rel="noreferrer">
+                            <strong>SimpleTerms AI</strong>
+                            <span>An AI-powered tool for simplifying complex legal documents.</span>
+                        </a>
+                        <a class="project-link" href="https://smartgpa.onrender.com" target="_blank" rel="noreferrer">
+                            <strong>SmartGPA</strong>
+                            <span>A feature-rich academic tool for planning, tracking progress, and calculating grades.</span>
+                        </a>
+                        <a class="project-link" href="fun/casino.html">
+                            <strong>Fun Zone</strong>
+                            <span>Small interactive builds and browser games.</span>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <section class="experience-section" aria-labelledby="experience-title">
+                <div class="section-inner experience-layout">
+                    <div class="experience-copy">
+                        <h2 id="experience-title">Experience</h2>
+                        <p>
+                            Jobs, internships, campus roles, and other professional experiences.
+                        </p>
+                    </div>
+                    <div class="experience-carousel" aria-label="Experience slideshow">
+                        <article class="experience-slide active">
+                            <img src="assets/mpwebsitepic.png" alt="MP Website Project">
+                            <div class="experience-caption">
+                                <p>Position 01</p>
+                                <h3>Web Developer</h3>
+                                <span>Fully created and hosted numerous live, responsive websites, including for projects, collaborative efforts, and my college a cappella group.</span>
+                            </div>
+                        </article>
+                        <article class="experience-slide">
+                            <img src="assets/lifeguarding-img.jpg" alt="Lifeguarding image">
+                            <div class="experience-caption">
+                                <p>Position 02</p>
+                                <h3>Lifeguard Captain</h3>
+                                <span>Led a team of lifeguards in ensuring swimmer safety, providing emergency medical assistance, and scheduling shifts and trainings. Employed for 5 years.</span>
+                            </div>
+                        </article>
+                        <article class="experience-slide">
+                            <img src="assets/lambda-img-old.jpg" alt="Lambda Chi Alpha image">
+                            <div class="experience-caption">
+                                <p>Position 03</p>
+                                <h3>New Member Educator & Philanthropist</h3>
+                                <span>As Kappa Chair of Lambda Chi Alpha's Beta Iota Chapter, I've led new member orientation, weekly values seminars, and community service initiatives.</span>
+                            </div>
+                        </article>
+                        <div class="experience-dots" aria-label="Choose experience slide"></div>
+                        <div class="experience-controls" aria-label="Experience slideshow controls">
+                            <button class="experience-btn" type="button" id="prevExperience" aria-label="Previous experience"><i class="fa fa-chevron-left" aria-hidden="true"></i></button>
+                            <button class="experience-btn" type="button" id="nextExperience" aria-label="Next experience"><i class="fa fa-chevron-right" aria-hidden="true"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <script>
+            const slides = Array.from(document.querySelectorAll(".slide"));
+            const dotsContainer = document.querySelector(".slide-dots");
+            let activeSlide = 0;
+            let slideTimer;
+
+            function showSlide(index) {
+                activeSlide = (index + slides.length) % slides.length;
+                slides.forEach((slide, slideIndex) => {
+                    slide.classList.toggle("active", slideIndex === activeSlide);
+                });
+                document.querySelectorAll(".slide-dot").forEach((dot, dotIndex) => {
+                    dot.classList.toggle("active", dotIndex === activeSlide);
+                    dot.setAttribute("aria-current", dotIndex === activeSlide ? "true" : "false");
+                });
+            }
+
+            function queueNextSlide() {
+                window.clearInterval(slideTimer);
+                slideTimer = window.setInterval(() => showSlide(activeSlide + 1), 5200);
+            }
+
+            slides.forEach((_, index) => {
+                const dot = document.createElement("button");
+                dot.className = "slide-dot";
+                dot.type = "button";
+                dot.setAttribute("aria-label", `Show slide ${index + 1}`);
+                dot.addEventListener("click", () => {
+                    showSlide(index);
+                    queueNextSlide();
+                });
+                dotsContainer.appendChild(dot);
+            });
+
+            document.getElementById("prevSlide").addEventListener("click", () => {
+                showSlide(activeSlide - 1);
+                queueNextSlide();
+            });
+
+            document.getElementById("nextSlide").addEventListener("click", () => {
+                showSlide(activeSlide + 1);
+                queueNextSlide();
+            });
+
+            showSlide(0);
+            queueNextSlide();
+
+            const interests = [
+                "Web Development",
+                "Artificial Intelligence",
+                "Software Engineering",
+                "Cybersecurity",
+                "Database Design",
+                "Programming"
+            ];
+            const typedInterest = document.querySelector(".typed-interest");
+            let interestIndex = 0;
+            let letterIndex = 0;
+            let deleting = false;
+
+            function typeInterest() {
+                const currentInterest = interests[interestIndex];
+                typedInterest.textContent = currentInterest.slice(0, letterIndex);
+
+                if (!deleting && letterIndex < currentInterest.length) {
+                    letterIndex += 1;
+                    window.setTimeout(typeInterest, 72);
+                    return;
+                }
+
+                if (!deleting && letterIndex === currentInterest.length) {
+                    deleting = true;
+                    window.setTimeout(typeInterest, 1250);
+                    return;
+                }
+
+                if (deleting && letterIndex > 0) {
+                    letterIndex -= 1;
+                    window.setTimeout(typeInterest, 38);
+                    return;
+                }
+
+                deleting = false;
+                interestIndex = (interestIndex + 1) % interests.length;
+                window.setTimeout(typeInterest, 250);
+            }
+
+            const experienceSlides = Array.from(document.querySelectorAll(".experience-slide"));
+            const experienceDotsContainer = document.querySelector(".experience-dots");
+            let activeExperience = 0;
+            let experienceTimer;
+
+            function showExperience(index) {
+                activeExperience = (index + experienceSlides.length) % experienceSlides.length;
+                experienceSlides.forEach((slide, slideIndex) => {
+                    slide.classList.toggle("active", slideIndex === activeExperience);
+                });
+                document.querySelectorAll(".experience-dot").forEach((dot, dotIndex) => {
+                    dot.classList.toggle("active", dotIndex === activeExperience);
+                    dot.setAttribute("aria-current", dotIndex === activeExperience ? "true" : "false");
+                });
+            }
+
+            function queueNextExperience() {
+                window.clearInterval(experienceTimer);
+                experienceTimer = window.setInterval(() => showExperience(activeExperience + 1), 6200);
+            }
+
+            experienceSlides.forEach((_, index) => {
+                const dot = document.createElement("button");
+                dot.className = "experience-dot";
+                dot.type = "button";
+                dot.setAttribute("aria-label", `Show experience ${index + 1}`);
+                dot.addEventListener("click", () => {
+                    showExperience(index);
+                    queueNextExperience();
+                });
+                experienceDotsContainer.appendChild(dot);
+            });
+
+            document.getElementById("prevExperience").addEventListener("click", () => {
+                showExperience(activeExperience - 1);
+                queueNextExperience();
+            });
+
+            document.getElementById("nextExperience").addEventListener("click", () => {
+                showExperience(activeExperience + 1);
+                queueNextExperience();
+            });
+
+            typeInterest();
+            showExperience(0);
+            queueNextExperience();
+        </script>
     </body>
 </html>
