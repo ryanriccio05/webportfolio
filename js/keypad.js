@@ -1,9 +1,14 @@
 document.addEventListener("DOMContentLoaded", function () {
     const contents = document.querySelectorAll(".content");
     const inputs = document.querySelectorAll(".numberinput");
+    let isLocked = false;
   
     contents.forEach(content => {
       content.addEventListener("click", function () {
+        if (isLocked) {
+          return;
+        }
+
         const value = this.querySelector(".number").textContent;
   
         if (value !== "<") {
@@ -49,6 +54,28 @@ document.addEventListener("DOMContentLoaded", function () {
           window.location.href = "fun/minesweeper.html"; 
         }, 500);
       }
+
+      if (entered === "1225") {
+        isLocked = true;
+        inputs.forEach(input => input.style.color = "green");
+        showSwoonAndClose();
+      }
+    }
+
+    function showSwoonAndClose() {
+      const overlay = document.createElement("div");
+      overlay.className = "swoon-overlay";
+
+      const image = document.createElement("img");
+      image.src = "assets/deltarune-swoon.gif";
+      image.alt = "";
+
+      overlay.appendChild(image);
+      document.body.appendChild(overlay);
+
+      setTimeout(() => {
+        window.location.href = "index.html";
+      }, 3000);
     }
   });
   
