@@ -2,38 +2,54 @@
 <html lang="en">
     <head>
         <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="Web Schedule Project" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="description" content="Ryan Riccio's October 2026 resume." />
         <meta name="author" content="Ryan Riccio" />
-        <title>Resume - Ryan Riccio</title>
-        <!-- Favicon-->
-        <link rel="icon" href="assets/resume.png">
-        <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="css/styles.css" rel="stylesheet" />
-        <link href="css/styles copy.css" rel="stylesheet"/>
+        <title>Resume | Ryan Riccio</title>
+        <link rel="icon" href="assets/resume.png" />
+        <link rel="stylesheet" href="css/resume-style.css" />
     </head>
     <body>
-        <div class="d-flex" id="wrapper">
-            <!-- Page content wrapper-->
-            <div id="page-content-wrapper">
-                <!-- Top navigation-->
-                <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
-                    <div class="container-fluid">
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                            <ul class="navbar-nav ms-auto mt-2 mt-lg-0">
-                                <li class="nav-item active"><button class="btn btn-outline-secondary" onclick="history.back()">Go Back</button></li>
-                            </ul>
-                        </div>
-                    </div>
-                </nav>
-                <!-- Page content-->
+        <header class="resume-bar">
+            <nav class="resume-nav" aria-label="Resume navigation">
+                <a class="home-link" href="index.html">
+                    <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m12 19-7-7 7-7M5 12h14" /></svg>
+                    <span>Portfolio</span>
+                </a>
+                <h1 id="resume-title">My Resume</h1>
+                <div class="resume-actions">
+                    <a class="pdf-link" href="assets/RyanRiccioResume_Oct2026.pdf" aria-label="Open PDF" title="Open PDF">
+                        <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Zm-1 0v6h6M8 13h8m-8 4h8" /></svg>
+                        <span>Open PDF</span>
+                    </a>
+                    <a class="download-link" href="assets/RyanRiccioResume_Oct2026.pdf" download aria-label="Download resume PDF" title="Download resume PDF">
+                        <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 15V3m-5 7 5 5 5-5M5 15v4a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-4" /></svg>
+                    </a>
+                </div>
+            </nav>
+        </header>
 
-                    <div align="center"><iframe src="assets/ryanriccioresume.pdf#zoom=page-fit" width="90%" height="1150px" frameborder="0"></iframe></div>
-                    
-        <!-- Bootstrap core JS-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-        <!-- Core theme JS-->
-        <script src="js/scripts.js"></script>
+        <main class="desk" aria-labelledby="resume-title">
+            <div class="print-station">
+                <div class="printer" aria-hidden="true">
+                    <div class="printer-feed"></div>
+                    <div class="printer-body">
+                        <div class="printer-top">
+                            <span class="printer-vents"></span>
+                            <span class="printer-light"></span>
+                        </div>
+                        <div class="printer-slot"></div>
+                    </div>
+                </div>
+
+                <div class="print-output">
+                    <img class="resume-sheet" src="assets/RyanRiccioResume_Oct2026-preview.png"
+                        width="1360" height="1760" alt="Printed preview of Ryan Riccio's October 2026 resume. The full document is available through the Open PDF link." />
+                </div>
+
+                <div class="desk-pencil" aria-hidden="true"></div>
+                <div class="desk-notepad" aria-hidden="true"></div>
+            </div>
+        </main>
     </body>
 </html>

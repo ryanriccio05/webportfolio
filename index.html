@@ -31,239 +31,318 @@
                 </div>
             </nav>
 
-            <section class="hero" aria-labelledby="hero-title">
-                <div class="hero-content">
-                    <div class="eyebrow"><span class="status-dot"></span> Personal website and academic hub</div>
-                    <h1 id="hero-title">Ryan Riccio's <br><span>Web Portfolio</span></h1>
-                    <div class="interest-line" aria-live="polite">
-                        <span class="interest-label">Interested in&nbsp;</span>
-                        <span class="typed-interest"></span>
-                        <span class="typing-cursor" aria-hidden="true"></span>
-                    </div>
-                    <p class="hero-copy">
-                        This website brings together my academic schedule, class resources, project demonstrations, relevant experience, and resume in one fast, polished place.
-                    </p>
-                    <div class="hero-actions">
-                        <a class="btn-main" href="resume.html"><i class="fa fa-file-text-o" aria-hidden="true"></i>View Resume</a>
-                        <a class="btn-main" href="https://github.com/ryanriccio05/" target="_blank"><i class="fa fa-github" aria-hidden="true"></i>View GitHub Profile</a>
-                        <a class="btn-main" href="mailto:rriccio@villanova.edu" target="_blank"><i class="fa fa-envelope" aria-hidden="true"></i>Contact Me</a>
-                    </div>
-                    <div class="stats-row" aria-label="Portfolio highlights">
-                        <div class="stat">
-                            <strong>10+</strong>
-                            <span>Core pages organized around my academic workflow</span>
+            <section class="hero-band" aria-labelledby="hero-title">
+                <div class="hero-binary" aria-hidden="true"></div>
+                <div class="hero">
+                    <div class="hero-content">
+                        <h1 id="hero-title">Ryan Riccio's <br><span>Web Portfolio</span></h1>
+                        <div class="interest-line" aria-live="polite">
+                            <span class="interest-label">Interested in&nbsp;</span>
+                            <span class="typed-interest"></span>
+                            <span class="typing-cursor" aria-hidden="true"></span>
                         </div>
-                        <div class="stat">
-                            <strong>7</strong>
-                            <span>Live projects and coding demonstrations connected to one website - with more coming!</span>
-                        </div>
-                        <div class="stat">
-                            <strong>24/7</strong>
-                            <span>Uptime and access to all resources, projects, and information, with frequent updates</span>
+                        <p class="hero-copy">
+                            This website brings together my academic schedule, class resources, project demonstrations, relevant experience, and resume in one fast, polished place.
+                        </p>
+                        <div class="hero-actions">
+                            <a class="btn-main" href="resume.html"><i class="fa fa-file-text-o" aria-hidden="true"></i>View Resume</a>
+                            <a class="btn-main" href="https://github.com/ryanriccio05/" target="_blank"><i class="fa fa-github" aria-hidden="true"></i>View GitHub Profile</a>
+                            <a class="btn-main" href="mailto:rriccio@villanova.edu" target="_blank"><i class="fa fa-envelope" aria-hidden="true"></i>Contact Me</a>
                         </div>
                     </div>
-                </div>
 
-                <div class="showcase" aria-label="Photo slideshow">
-                    <div class="slideshow">
-                        <div class="slide portrait active">
-                            <img src="assets/ryan-riccio-picture.jpg" alt="Ryan Riccio portrait">
-                            <div class="slide-caption">
-                                <p>About Me</p>
-                                <h2>Critical Thinker, Results-Driven Builder, Leader</h2>
-                            </div>
+                    <div class="showcase">
+                        <div class="hero-portrait">
+                            <img src="assets/ryan-riccio-picture.jpg" alt="Ryan Riccio portrait" fetchpriority="high">
                         </div>
-                        <div class="slide">
-                            <img src="assets/ccb7759f-56fb-49c0-8f38-93742c56b003.png" alt="Villanova campus">
-                            <div class="slide-caption">
-                                <p>My School</p>
-                                <h2>Villanova Class of '27</h2>
-                            </div>
-                        </div>
-                        <div class="slide">
-                            <img src="assets/voxelchurch.png" alt="Creative church model project">
-                            <div class="slide-caption">
-                                <p>My Academic Journey</p>
-                                <h2>Computer Science Major; Pursuing Cybersecurity Minor</h2>
-                            </div>
-                        </div>
-                        <div class="slide">
-                            <img src="assets/lambda-img.jpg" alt="Villanova visual">
-                            <div class="slide-caption">
-                                <p>Leadership</p>
-                                <h2>Lifeguard Captain, Lambda Chi Alpha Kappa Chair</h2>
-                            </div>
-                        </div>
-                        <div class="slide-controls" aria-label="Slideshow controls">
-                            <button class="slide-btn" type="button" id="prevSlide" aria-label="Previous slide"><i class="fa fa-chevron-left" aria-hidden="true"></i></button>
-                            <button class="slide-btn" type="button" id="nextSlide" aria-label="Next slide"><i class="fa fa-chevron-right" aria-hidden="true"></i></button>
-                        </div>
-                        <div class="slide-dots" aria-label="Choose slide"></div>
                     </div>
                 </div>
             </section>
 
-            <section class="feature-band" aria-labelledby="features-title">
+            <section class="feature-band learn-more" aria-labelledby="features-title" aria-roledescription="carousel">
                 <div class="section-inner">
                     <div class="section-heading">
-                        <h2 id="features-title">Important Pages</h2>
+                        <h2 id="features-title">Learn More</h2>
                     </div>
-                    <div class="feature-grid">
-                        <article class="feature-card">
+                    <div class="learn-stage" id="learn-stage">
+                        <article class="feature-card learn-card">
                             <div class="feature-icon"><i class="fa fa-info" aria-hidden="true"></i></div>
                             <h3>Information</h3>
                             <p>An informational page of academic details, references, and other relevant context.</p>
                             <a href="info.html">Open information page</a>
+                            <div class="learn-timer" aria-hidden="true"><span></span></div>
                         </article>
-                        <article class="feature-card">
+                        <article class="feature-card learn-card">
                             <div class="feature-icon"><i class="fa fa-calendar" aria-hidden="true"></i></div>
                             <h3>Calendar</h3>
                             <p>Live google calendar integration for scheduling and keeping track of important events.</p>
                             <a href="calendar.html">Open calendar page</a>
+                            <div class="learn-timer" aria-hidden="true"><span></span></div>
                         </article>
-                        <article class="feature-card">
+                        <article class="feature-card learn-card">
                             <div class="feature-icon"><i class="fa fa-graduation-cap" aria-hidden="true"></i></div>
                             <h3>Classes</h3>
                             <p>Semesterly archive of course details, materials, and syllabi for ease of access.</p>
                             <a href="classes.html">Open classes page</a>
+                            <div class="learn-timer" aria-hidden="true"><span></span></div>
                         </article>
-                        <article class="feature-card">
+                        <article class="feature-card learn-card">
                             <div class="feature-icon"><i class="fa fa-tasks" aria-hidden="true"></i></div>
                             <h3>Assignments</h3>
                             <p>Live tracking of assignment due dates and submission status during the semester.</p>
                             <a href="assignments.html">Open assignments page</a>
+                            <div class="learn-timer" aria-hidden="true"><span></span></div>
                         </article>
+                        <article class="feature-card learn-card learn-photo-card">
+                            <div class="feature-icon"><i class="fa fa-university" aria-hidden="true"></i></div>
+                            <img class="learn-photo" src="assets/ccb7759f-56fb-49c0-8f38-93742c56b003.png" alt="Villanova campus" width="330" height="77" loading="lazy" decoding="async">
+                            <h3>My School</h3>
+                            <p>Villanova Class of ’27.</p>
+                            <div class="learn-timer" aria-hidden="true"><span></span></div>
+                        </article>
+                        <article class="feature-card learn-card learn-photo-card">
+                            <div class="feature-icon"><i class="fa fa-code" aria-hidden="true"></i></div>
+                            <img class="learn-photo" src="assets/voxelchurch.png" alt="Creative church model project" width="330" height="77" loading="lazy" decoding="async">
+                            <h3>My Academic Journey</h3>
+                            <p>Computer Science major with a declared Cybersecurity minor.</p>
+                            <div class="learn-timer" aria-hidden="true"><span></span></div>
+                        </article>
+                        <article class="feature-card learn-card learn-photo-card">
+                            <div class="feature-icon"><i class="fa fa-users" aria-hidden="true"></i></div>
+                            <img class="learn-photo" src="assets/lambda-img.jpg" alt="Lambda Chi Alpha at Villanova" width="330" height="77" loading="lazy" decoding="async">
+                            <h3>Leadership</h3>
+                            <p>Lifeguard Captain and Lambda Chi Alpha Kappa Chair.</p>
+                            <div class="learn-timer" aria-hidden="true"><span></span></div>
+                        </article>
+                    </div>
+                    <div class="learn-controls" hidden>
+                        <button type="button" class="learn-control" data-learn-prev aria-label="Previous Learn More slide" aria-controls="learn-stage"><i class="fa fa-chevron-left" aria-hidden="true"></i></button>
+                        <p class="learn-status" aria-live="polite" aria-atomic="true"></p>
+                        <button type="button" class="learn-control" data-learn-next aria-label="Next Learn More slide" aria-controls="learn-stage"><i class="fa fa-chevron-right" aria-hidden="true"></i></button>
+                        <button type="button" class="learn-control learn-pause" data-learn-pause aria-label="Pause automatic rotation" aria-pressed="false"><i class="fa fa-pause" aria-hidden="true"></i></button>
                     </div>
                 </div>
             </section>
 
             <section class="project-strip" aria-labelledby="projects-title">
+                <div class="technology-backdrop" aria-hidden="true">
+                    <div class="technology-row">
+                        <div class="technology-group"><img src="assets/technology/html5-original.svg" alt="" width="48" height="48" loading="lazy" decoding="async" title="HTML"><img src="assets/technology/javascript-original.svg" alt="" width="48" height="48" loading="lazy" decoding="async" title="JavaScript"><img src="assets/technology/java-original.svg" alt="" width="48" height="48" loading="lazy" decoding="async" title="Java"><img src="assets/technology/python-original.svg" alt="" width="48" height="48" loading="lazy" decoding="async" title="Python"><img src="assets/technology/typescript-original.svg" alt="" width="48" height="48" loading="lazy" decoding="async" title="TypeScript"><img src="assets/technology/react-original.svg" alt="" width="48" height="48" loading="lazy" decoding="async" title="React"><img src="assets/technology/nodejs-original.svg" alt="" width="48" height="48" loading="lazy" decoding="async" title="Node.js"><img src="assets/technology/nextjs-original.svg" alt="" width="48" height="48" loading="lazy" decoding="async" title="Next.js"><img src="assets/technology/c-original.svg" alt="" width="48" height="48" loading="lazy" decoding="async" title="C"><img src="assets/technology/azuresqldatabase-original.svg" alt="" width="48" height="48" loading="lazy" decoding="async" title="SQL"><img src="assets/technology/css3-original.svg" alt="" width="48" height="48" loading="lazy" decoding="async" title="CSS"><img src="assets/technology/git-original.svg" alt="" width="48" height="48" loading="lazy" decoding="async" title="Git"></div>
+                        <div class="technology-group"><img src="assets/technology/html5-original.svg" alt="" width="48" height="48" loading="lazy" decoding="async" title="HTML"><img src="assets/technology/javascript-original.svg" alt="" width="48" height="48" loading="lazy" decoding="async" title="JavaScript"><img src="assets/technology/java-original.svg" alt="" width="48" height="48" loading="lazy" decoding="async" title="Java"><img src="assets/technology/python-original.svg" alt="" width="48" height="48" loading="lazy" decoding="async" title="Python"><img src="assets/technology/typescript-original.svg" alt="" width="48" height="48" loading="lazy" decoding="async" title="TypeScript"><img src="assets/technology/react-original.svg" alt="" width="48" height="48" loading="lazy" decoding="async" title="React"><img src="assets/technology/nodejs-original.svg" alt="" width="48" height="48" loading="lazy" decoding="async" title="Node.js"><img src="assets/technology/nextjs-original.svg" alt="" width="48" height="48" loading="lazy" decoding="async" title="Next.js"><img src="assets/technology/c-original.svg" alt="" width="48" height="48" loading="lazy" decoding="async" title="C"><img src="assets/technology/azuresqldatabase-original.svg" alt="" width="48" height="48" loading="lazy" decoding="async" title="SQL"><img src="assets/technology/css3-original.svg" alt="" width="48" height="48" loading="lazy" decoding="async" title="CSS"><img src="assets/technology/git-original.svg" alt="" width="48" height="48" loading="lazy" decoding="async" title="Git"></div>
+                    </div>
+                    <div class="technology-row">
+                        <div class="technology-group"><img src="assets/technology/python-original.svg" alt="" width="48" height="48" loading="lazy" decoding="async" title="Python"><img src="assets/technology/typescript-original.svg" alt="" width="48" height="48" loading="lazy" decoding="async" title="TypeScript"><img src="assets/technology/react-original.svg" alt="" width="48" height="48" loading="lazy" decoding="async" title="React"><img src="assets/technology/nodejs-original.svg" alt="" width="48" height="48" loading="lazy" decoding="async" title="Node.js"><img src="assets/technology/nextjs-original.svg" alt="" width="48" height="48" loading="lazy" decoding="async" title="Next.js"><img src="assets/technology/c-original.svg" alt="" width="48" height="48" loading="lazy" decoding="async" title="C"><img src="assets/technology/azuresqldatabase-original.svg" alt="" width="48" height="48" loading="lazy" decoding="async" title="SQL"><img src="assets/technology/css3-original.svg" alt="" width="48" height="48" loading="lazy" decoding="async" title="CSS"><img src="assets/technology/git-original.svg" alt="" width="48" height="48" loading="lazy" decoding="async" title="Git"><img src="assets/technology/html5-original.svg" alt="" width="48" height="48" loading="lazy" decoding="async" title="HTML"><img src="assets/technology/javascript-original.svg" alt="" width="48" height="48" loading="lazy" decoding="async" title="JavaScript"><img src="assets/technology/java-original.svg" alt="" width="48" height="48" loading="lazy" decoding="async" title="Java"></div>
+                        <div class="technology-group"><img src="assets/technology/python-original.svg" alt="" width="48" height="48" loading="lazy" decoding="async" title="Python"><img src="assets/technology/typescript-original.svg" alt="" width="48" height="48" loading="lazy" decoding="async" title="TypeScript"><img src="assets/technology/react-original.svg" alt="" width="48" height="48" loading="lazy" decoding="async" title="React"><img src="assets/technology/nodejs-original.svg" alt="" width="48" height="48" loading="lazy" decoding="async" title="Node.js"><img src="assets/technology/nextjs-original.svg" alt="" width="48" height="48" loading="lazy" decoding="async" title="Next.js"><img src="assets/technology/c-original.svg" alt="" width="48" height="48" loading="lazy" decoding="async" title="C"><img src="assets/technology/azuresqldatabase-original.svg" alt="" width="48" height="48" loading="lazy" decoding="async" title="SQL"><img src="assets/technology/css3-original.svg" alt="" width="48" height="48" loading="lazy" decoding="async" title="CSS"><img src="assets/technology/git-original.svg" alt="" width="48" height="48" loading="lazy" decoding="async" title="Git"><img src="assets/technology/html5-original.svg" alt="" width="48" height="48" loading="lazy" decoding="async" title="HTML"><img src="assets/technology/javascript-original.svg" alt="" width="48" height="48" loading="lazy" decoding="async" title="JavaScript"><img src="assets/technology/java-original.svg" alt="" width="48" height="48" loading="lazy" decoding="async" title="Java"></div>
+                    </div>
+                    <div class="technology-row">
+                        <div class="technology-group"><img src="assets/technology/nodejs-original.svg" alt="" width="48" height="48" loading="lazy" decoding="async" title="Node.js"><img src="assets/technology/nextjs-original.svg" alt="" width="48" height="48" loading="lazy" decoding="async" title="Next.js"><img src="assets/technology/c-original.svg" alt="" width="48" height="48" loading="lazy" decoding="async" title="C"><img src="assets/technology/azuresqldatabase-original.svg" alt="" width="48" height="48" loading="lazy" decoding="async" title="SQL"><img src="assets/technology/css3-original.svg" alt="" width="48" height="48" loading="lazy" decoding="async" title="CSS"><img src="assets/technology/git-original.svg" alt="" width="48" height="48" loading="lazy" decoding="async" title="Git"><img src="assets/technology/html5-original.svg" alt="" width="48" height="48" loading="lazy" decoding="async" title="HTML"><img src="assets/technology/javascript-original.svg" alt="" width="48" height="48" loading="lazy" decoding="async" title="JavaScript"><img src="assets/technology/java-original.svg" alt="" width="48" height="48" loading="lazy" decoding="async" title="Java"><img src="assets/technology/python-original.svg" alt="" width="48" height="48" loading="lazy" decoding="async" title="Python"><img src="assets/technology/typescript-original.svg" alt="" width="48" height="48" loading="lazy" decoding="async" title="TypeScript"><img src="assets/technology/react-original.svg" alt="" width="48" height="48" loading="lazy" decoding="async" title="React"></div>
+                        <div class="technology-group"><img src="assets/technology/nodejs-original.svg" alt="" width="48" height="48" loading="lazy" decoding="async" title="Node.js"><img src="assets/technology/nextjs-original.svg" alt="" width="48" height="48" loading="lazy" decoding="async" title="Next.js"><img src="assets/technology/c-original.svg" alt="" width="48" height="48" loading="lazy" decoding="async" title="C"><img src="assets/technology/azuresqldatabase-original.svg" alt="" width="48" height="48" loading="lazy" decoding="async" title="SQL"><img src="assets/technology/css3-original.svg" alt="" width="48" height="48" loading="lazy" decoding="async" title="CSS"><img src="assets/technology/git-original.svg" alt="" width="48" height="48" loading="lazy" decoding="async" title="Git"><img src="assets/technology/html5-original.svg" alt="" width="48" height="48" loading="lazy" decoding="async" title="HTML"><img src="assets/technology/javascript-original.svg" alt="" width="48" height="48" loading="lazy" decoding="async" title="JavaScript"><img src="assets/technology/java-original.svg" alt="" width="48" height="48" loading="lazy" decoding="async" title="Java"><img src="assets/technology/python-original.svg" alt="" width="48" height="48" loading="lazy" decoding="async" title="Python"><img src="assets/technology/typescript-original.svg" alt="" width="48" height="48" loading="lazy" decoding="async" title="TypeScript"><img src="assets/technology/react-original.svg" alt="" width="48" height="48" loading="lazy" decoding="async" title="React"></div>
+                    </div>
+                    <div class="technology-row">
+                        <div class="technology-group"><img src="assets/technology/azuresqldatabase-original.svg" alt="" width="48" height="48" loading="lazy" decoding="async" title="SQL"><img src="assets/technology/css3-original.svg" alt="" width="48" height="48" loading="lazy" decoding="async" title="CSS"><img src="assets/technology/git-original.svg" alt="" width="48" height="48" loading="lazy" decoding="async" title="Git"><img src="assets/technology/html5-original.svg" alt="" width="48" height="48" loading="lazy" decoding="async" title="HTML"><img src="assets/technology/javascript-original.svg" alt="" width="48" height="48" loading="lazy" decoding="async" title="JavaScript"><img src="assets/technology/java-original.svg" alt="" width="48" height="48" loading="lazy" decoding="async" title="Java"><img src="assets/technology/python-original.svg" alt="" width="48" height="48" loading="lazy" decoding="async" title="Python"><img src="assets/technology/typescript-original.svg" alt="" width="48" height="48" loading="lazy" decoding="async" title="TypeScript"><img src="assets/technology/react-original.svg" alt="" width="48" height="48" loading="lazy" decoding="async" title="React"><img src="assets/technology/nodejs-original.svg" alt="" width="48" height="48" loading="lazy" decoding="async" title="Node.js"><img src="assets/technology/nextjs-original.svg" alt="" width="48" height="48" loading="lazy" decoding="async" title="Next.js"><img src="assets/technology/c-original.svg" alt="" width="48" height="48" loading="lazy" decoding="async" title="C"></div>
+                        <div class="technology-group"><img src="assets/technology/azuresqldatabase-original.svg" alt="" width="48" height="48" loading="lazy" decoding="async" title="SQL"><img src="assets/technology/css3-original.svg" alt="" width="48" height="48" loading="lazy" decoding="async" title="CSS"><img src="assets/technology/git-original.svg" alt="" width="48" height="48" loading="lazy" decoding="async" title="Git"><img src="assets/technology/html5-original.svg" alt="" width="48" height="48" loading="lazy" decoding="async" title="HTML"><img src="assets/technology/javascript-original.svg" alt="" width="48" height="48" loading="lazy" decoding="async" title="JavaScript"><img src="assets/technology/java-original.svg" alt="" width="48" height="48" loading="lazy" decoding="async" title="Java"><img src="assets/technology/python-original.svg" alt="" width="48" height="48" loading="lazy" decoding="async" title="Python"><img src="assets/technology/typescript-original.svg" alt="" width="48" height="48" loading="lazy" decoding="async" title="TypeScript"><img src="assets/technology/react-original.svg" alt="" width="48" height="48" loading="lazy" decoding="async" title="React"><img src="assets/technology/nodejs-original.svg" alt="" width="48" height="48" loading="lazy" decoding="async" title="Node.js"><img src="assets/technology/nextjs-original.svg" alt="" width="48" height="48" loading="lazy" decoding="async" title="Next.js"><img src="assets/technology/c-original.svg" alt="" width="48" height="48" loading="lazy" decoding="async" title="C"></div>
+                    </div>
+                </div>
                 <div class="section-inner project-layout">
-                    <div>
-                        <h2 id="projects-title">Featured Projects</h2>
-                        <p>
-                            A showcase of some of my latest work, including personal projects, academic endeavors, and collaborative efforts.
-                        </p>
-                    </div>
-                    <div class="project-links">
-                        <a class="project-link" href="vuminorproblem.netlify.app" target="_blank" rel="noreferrer">
-                            <strong>A Cappella Website</strong>
-                            <span>Informational website for my college a cappella group, frequently updated with news and event information.</span>
-                        </a>
-                        <a class="project-link" href="https://simplesterms.netlify.app" target="_blank" rel="noreferrer">
-                            <strong>SimpleTerms AI</strong>
-                            <span>An AI-powered tool for simplifying complex legal documents.</span>
-                        </a>
-                        <a class="project-link" href="https://smartgpa.onrender.com" target="_blank" rel="noreferrer">
-                            <strong>SmartGPA</strong>
-                            <span>A feature-rich academic tool for planning, tracking progress, and calculating grades.</span>
-                        </a>
-                        <a class="project-link" href="fun/casino.html">
-                            <strong>Fun Zone</strong>
-                            <span>Small interactive builds and browser games.</span>
-                        </a>
-                    </div>
+                    <h2 id="projects-title">Project Zone</h2>
+                    <p>Explore my web projects with a closer look at what I built, how they work, and video demos of them in action.</p>
+                    <a class="project-zone-button" href="project-zone.html">See My Work <span aria-hidden="true">&rarr;</span></a>
                 </div>
             </section>
 
             <section class="experience-section" aria-labelledby="experience-title">
-                <div class="section-inner experience-layout">
-                    <div class="experience-copy">
+                <div class="timeline-landscape" aria-hidden="true">
+                    <div class="timeline-sun"></div>
+                    <div class="timeline-water"></div>
+                </div>
+                <div class="section-inner">
+                    <div class="timeline-heading">
+                        <p class="timeline-eyebrow">2019 — 2026 / The journey so far</p>
                         <h2 id="experience-title">Experience</h2>
-                        <p>
-                            Jobs, internships, campus roles, and other professional experiences.
-                        </p>
+                        <p>From the classroom to the beach to the browser: the milestones, projects, and people that have shaped my path.</p>
                     </div>
-                    <div class="experience-carousel" aria-label="Experience slideshow">
-                        <article class="experience-slide">
-                            <img src="assets/shupicture.png" alt="Sacred Heart University Campus image">
-                            <div class="experience-caption">
-                                <p>Position 01</p>
-                                <h3 style="color: white;">Digital Strategy Intern</h3>
-                                <span>At Sacred Heart University, I contributed to technical research and development of university-wide web content on <br> 7,000+ active webpages.</span>
-                            </div>
-                        </article>
-                        <article class="experience-slide active">
-                            <img src="assets/mpwebsitepic.png" alt="MP Website Project">
-                            <div class="experience-caption">
-                                <p>Position 02</p>
-                                <h3 style="color: white;">Web Developer</h3>
-                                <span>Fully created and hosted numerous live, responsive websites, including for projects, collaborative efforts, and my college a cappella group.</span>
-                            </div>
-                        </article>
-                        <article class="experience-slide">
-                            <img src="assets/lifeguarding-img.jpg" alt="Lifeguarding image">
-                            <div class="experience-caption">
-                                <p>Position 03</p>
-                                <h3 style="color:white;">Lifeguard Captain</h3>
-                                <span>Led a team of lifeguards in ensuring swimmer safety, providing emergency medical assistance, and scheduling shifts and trainings. Employed for 5 years.</span>
-                            </div>
-                        </article>
-                        <article class="experience-slide">
-                            <img src="assets/lambda-img-old.jpg" alt="Lambda Chi Alpha image">
-                            <div class="experience-caption">
-                                <p>Position 04</p>
-                                <h3 style="color: white;">New Member Educator & Philanthropist</h3>
-                                <span>As Kappa Chair of Lambda Chi Alpha's Beta Iota Chapter, I've led new member orientation, weekly values seminars, and community service initiatives.</span>
-                            </div>
-                        </article>
-                        <div class="experience-dots" aria-label="Choose experience slide"></div>
-                        <div class="experience-controls" aria-label="Experience slideshow controls">
-                            <button class="experience-btn" type="button" id="prevExperience" aria-label="Previous experience"><i class="fa fa-chevron-left" aria-hidden="true"></i></button>
-                            <button class="experience-btn" type="button" id="nextExperience" aria-label="Next experience"><i class="fa fa-chevron-right" aria-hidden="true"></i></button>
-                        </div>
-                    </div>
+                    <ol class="experience-timeline">
+                        <li class="timeline-entry">
+                            <span class="timeline-dot" aria-hidden="true"></span>
+                            <article class="timeline-card">
+                                <div class="timeline-image"><img src="assets/EF_Fairfield_Prep.webp" alt="Fairfield Prep milestone illustration" width="800" height="420" loading="lazy" decoding="async"></div>
+                                <div class="timeline-content">
+                                    <div class="timeline-meta"><time datetime="2019-08">August 2019</time><span>Education</span></div>
+                                    <h3>Fairfield Prep: the beginning</h3>
+                                    <p>Began high school at Fairfield College Preparatory School.</p>
+                                </div>
+                            </article>
+                        </li>
+                        <li class="timeline-entry">
+                            <span class="timeline-dot" aria-hidden="true"></span>
+                            <article class="timeline-card">
+                                <div class="timeline-image"><img src="assets/lifeguarding-img.jpg" alt="Lifeguarding at the beach" width="800" height="420" loading="lazy" decoding="async"></div>
+                                <div class="timeline-content">
+                                    <div class="timeline-meta"><time datetime="2021-05">May 2021</time><span>Leadership</span></div>
+                                    <h3>First season on the beach</h3>
+                                    <p>Began lifeguarding for the Misquamicut Fire District.</p>
+                                </div>
+                            </article>
+                        </li>
+                        <li class="timeline-entry">
+                            <span class="timeline-dot" aria-hidden="true"></span>
+                            <article class="timeline-card">
+                                <div class="timeline-image timeline-image--contain"><img src="assets/timeline/grad_TL.jpg" alt="Fairfield Prep graduation photo" width="960" height="1280" loading="lazy" decoding="async"></div>
+                                <div class="timeline-content">
+                                    <div class="timeline-meta"><time datetime="2023-05">May 2023</time><span>Education</span></div>
+                                    <h3>Graduated Summa Cum Laude</h3>
+                                    <p>Graduated from Fairfield College Preparatory School with Summa Cum Laude honors.</p>
+                                </div>
+                            </article>
+                        </li>
+                        <li class="timeline-entry">
+                            <span class="timeline-dot" aria-hidden="true"></span>
+                            <article class="timeline-card">
+                                <div class="timeline-image"><img src="assets/ccb7759f-56fb-49c0-8f38-93742c56b003.png" alt="Villanova University campus" width="800" height="420" loading="lazy" decoding="async"></div>
+                                <div class="timeline-content">
+                                    <div class="timeline-meta"><time datetime="2023-08">August 2023</time><span>Education</span></div>
+                                    <h3>A new chapter at Villanova</h3>
+                                    <p>Began attending Villanova University as a Computer Science student.</p>
+                                </div>
+                            </article>
+                        </li>
+                        <li class="timeline-entry">
+                            <span class="timeline-dot" aria-hidden="true"></span>
+                            <article class="timeline-card">
+                                <div class="timeline-image"><img src="assets/simplestTL.png" alt="SimpleTerms AI homepage" width="1892" height="987" loading="lazy" decoding="async"></div>
+                                <div class="timeline-content">
+                                    <div class="timeline-meta"><time datetime="2023-10">October 2023</time><span>Award / Project</span></div>
+                                    <h3>An idea becomes SimpleTerms</h3>
+                                    <p>Won 1st Place and Crowd Choice at Villanova’s annual Idea Challenge with the proposal that eventually became SimpleTerms, my first large-scale web project.</p>
+                                </div>
+                            </article>
+                        </li>
+                        <li class="timeline-entry">
+                            <span class="timeline-dot" aria-hidden="true"></span>
+                            <article class="timeline-card">
+                                <div class="timeline-image timeline-image--contain"><img src="assets/timeline/co-captain_TL.jpg" alt="Photo from Ryan’s season as lifeguard co-captain" width="1128" height="1504" loading="lazy" decoding="async"></div>
+                                <div class="timeline-content">
+                                    <div class="timeline-meta"><time datetime="2024-05">May 2024</time><span>Leadership</span></div>
+                                    <h3>Lifeguard Co-Captain</h3>
+                                    <p>Promoted to Lifeguard Co-Captain at the Misquamicut Fire District.</p>
+                                </div>
+                            </article>
+                        </li>
+                        <li class="timeline-entry">
+                            <span class="timeline-dot" aria-hidden="true"></span>
+                            <article class="timeline-card">
+                                <div class="timeline-image timeline-image--contain"><img src="assets/webportfolioTL.png" alt="An earlier version of Ryan Riccio's web portfolio homepage" width="1592" height="922" loading="lazy" decoding="async"></div>
+                                <div class="timeline-content">
+                                    <div class="timeline-meta"><time datetime="2024-09">September 2024</time><span>Project</span></div>
+                                    <h3>Building my own corner of the web</h3>
+                                    <p>Began developing this website: my Web Portfolio.</p>
+                                </div>
+                            </article>
+                        </li>
+                        <li class="timeline-entry">
+                            <span class="timeline-dot" aria-hidden="true"></span>
+                            <article class="timeline-card">
+                                <div class="timeline-image"><img src="assets/mpwebsitepic.png" alt="Villanova Minor Problem website" width="800" height="420" loading="lazy" decoding="async"></div>
+                                <div class="timeline-content">
+                                    <div class="timeline-meta"><time datetime="2025-01">January 2025</time><span>Project</span></div>
+                                    <h3>A website for Minor Problem</h3>
+                                    <p>Created and began maintaining the website for my a cappella group, Villanova’s Minor Problem.</p>
+                                </div>
+                            </article>
+                        </li>
+                        <li class="timeline-entry">
+                            <span class="timeline-dot" aria-hidden="true"></span>
+                            <article class="timeline-card">
+                                <div class="timeline-image timeline-image--contain"><img src="assets/timeline/captain_TL.jpg" alt="Photo from Ryan’s season as lifeguard captain" width="1440" height="1920" loading="lazy" decoding="async"></div>
+                                <div class="timeline-content">
+                                    <div class="timeline-meta"><time datetime="2025-05">May 2025</time><span>Leadership</span></div>
+                                    <h3>Lifeguard Captain</h3>
+                                    <p>Promoted to Lifeguard Captain at the Misquamicut Fire District.</p>
+                                </div>
+                            </article>
+                        </li>
+                        <li class="timeline-entry">
+                            <span class="timeline-dot" aria-hidden="true"></span>
+                            <article class="timeline-card">
+                                <div class="timeline-image"><img src="assets/smartgpaTL.png" alt="SmartGPA course tracker and GPA calculator" width="1896" height="987" loading="lazy" decoding="async"></div>
+                                <div class="timeline-content">
+                                    <div class="timeline-meta"><time datetime="2026-01">January–March 2026</time><span>Project</span></div>
+                                    <h3>SmartGPA: built and released</h3>
+                                    <p>Built and released SmartGPA, an academic tool for planning, tracking progress, and calculating grades.</p>
+                                </div>
+                            </article>
+                        </li>
+                        <li class="timeline-entry">
+                            <span class="timeline-dot" aria-hidden="true"></span>
+                            <article class="timeline-card">
+                                <div class="timeline-image"><img src="assets/spotifindTL.png" alt="SpotiFind playlist generator homepage" width="1880" height="967" loading="lazy" decoding="async"></div>
+                                <div class="timeline-content">
+                                    <div class="timeline-meta"><time datetime="2026-04">April 2026</time><span>Project</span></div>
+                                    <h3>Finding the next playlist</h3>
+                                    <p>Created SpotiFind, a Spotify playlist generator program.</p>
+                                </div>
+                            </article>
+                        </li>
+                        <li class="timeline-entry">
+                            <span class="timeline-dot" aria-hidden="true"></span>
+                            <article class="timeline-card">
+                                <div class="timeline-image"><img src="assets/timeline/manager_TL.jpg" alt="Photo from Ryan’s season as beach manager" width="1920" height="1440" loading="lazy" decoding="async"></div>
+                                <div class="timeline-content">
+                                    <div class="timeline-meta"><time datetime="2026-05">May 2026</time><span>Leadership</span></div>
+                                    <h3>Beach Manager</h3>
+                                    <p>Promoted to Beach Manager at the Misquamicut Fire District.</p>
+                                </div>
+                            </article>
+                        </li>
+                        <li class="timeline-entry">
+                            <span class="timeline-dot" aria-hidden="true"></span>
+                            <article class="timeline-card">
+                                <div class="timeline-image"><img src="assets/shupicture.png" alt="Sacred Heart University campus" width="800" height="420" loading="lazy" decoding="async"></div>
+                                <div class="timeline-content">
+                                    <div class="timeline-meta"><time datetime="2026-06">June–August 2026</time><span>Experience</span></div>
+                                    <h3>Digital strategy, alongside beach leadership</h3>
+                                    <p>Worked as a Digital Strategy Intern for Sacred Heart University while concurrently serving as Beach Manager at the Misquamicut Fire District.</p>
+                                </div>
+                            </article>
+                        </li>
+                        <li class="timeline-entry">
+                            <span class="timeline-dot" aria-hidden="true"></span>
+                            <article class="timeline-card">
+                                <div class="timeline-image"><img src="assets/cybersecurity_TL.webp" alt="Cybersecurity alert and network security icons over a laptop" width="612" height="400" loading="lazy" decoding="async"></div>
+                                <div class="timeline-content">
+                                    <div class="timeline-meta"><time datetime="2026-09">September 2026</time><span>Education</span></div>
+                                    <h3>Adding a cybersecurity focus</h3>
+                                    <p>Declared a Cybersecurity minor at Villanova University.</p>
+                                </div>
+                            </article>
+                        </li>
+                        <li class="timeline-entry">
+                            <span class="timeline-dot" aria-hidden="true"></span>
+                            <article class="timeline-card">
+                                <div class="timeline-image"><img src="assets/sidequest_TL.png" alt="SideQuest homepage and compass logo" width="1837" height="952" loading="lazy" decoding="async"></div>
+                                <div class="timeline-content">
+                                    <div class="timeline-meta"><time datetime="2026-10">October 2026</time><span>Project</span></div>
+                                    <h3>The next adventure: SideQuest</h3>
+                                    <p>Began working on SideQuest, my senior capstone project.</p>
+                                </div>
+                            </article>
+                        </li>
+                        <li class="timeline-entry">
+                            <span class="timeline-dot" aria-hidden="true"></span>
+                            <article class="timeline-card">
+                                <div class="timeline-content">
+                                    <div class="timeline-meta"><span>Present</span></div>
+                                    <h3>Taking the next step</h3>
+                                    <p>What will show up on this timeline next? Only time will tell. As I approach graduation and am applying for jobs, I'm excited to see where my skills and passions will lead me.</p>
+                                </div>
+                            </article>
+                        </li>
+                    </ol>
                 </div>
             </section>
         </main>
 
         <script>
-            const slides = Array.from(document.querySelectorAll(".slide"));
-            const dotsContainer = document.querySelector(".slide-dots");
-            let activeSlide = 0;
-            let slideTimer;
-
-            function showSlide(index) {
-                activeSlide = (index + slides.length) % slides.length;
-                slides.forEach((slide, slideIndex) => {
-                    slide.classList.toggle("active", slideIndex === activeSlide);
-                });
-                document.querySelectorAll(".slide-dot").forEach((dot, dotIndex) => {
-                    dot.classList.toggle("active", dotIndex === activeSlide);
-                    dot.setAttribute("aria-current", dotIndex === activeSlide ? "true" : "false");
-                });
-            }
-
-            function queueNextSlide() {
-                window.clearInterval(slideTimer);
-                slideTimer = window.setInterval(() => showSlide(activeSlide + 1), 5200);
-            }
-
-            slides.forEach((_, index) => {
-                const dot = document.createElement("button");
-                dot.className = "slide-dot";
-                dot.type = "button";
-                dot.setAttribute("aria-label", `Show slide ${index + 1}`);
-                dot.addEventListener("click", () => {
-                    showSlide(index);
-                    queueNextSlide();
-                });
-                dotsContainer.appendChild(dot);
-            });
-
-            document.getElementById("prevSlide").addEventListener("click", () => {
-                showSlide(activeSlide - 1);
-                queueNextSlide();
-            });
-
-            document.getElementById("nextSlide").addEventListener("click", () => {
-                showSlide(activeSlide + 1);
-                queueNextSlide();
-            });
-
-            showSlide(0);
-            queueNextSlide();
-
             const interests = [
                 "Web Development",
                 "Artificial Intelligence",
@@ -304,52 +383,10 @@
                 window.setTimeout(typeInterest, 250);
             }
 
-            const experienceSlides = Array.from(document.querySelectorAll(".experience-slide"));
-            const experienceDotsContainer = document.querySelector(".experience-dots");
-            let activeExperience = 0;
-            let experienceTimer;
-
-            function showExperience(index) {
-                activeExperience = (index + experienceSlides.length) % experienceSlides.length;
-                experienceSlides.forEach((slide, slideIndex) => {
-                    slide.classList.toggle("active", slideIndex === activeExperience);
-                });
-                document.querySelectorAll(".experience-dot").forEach((dot, dotIndex) => {
-                    dot.classList.toggle("active", dotIndex === activeExperience);
-                    dot.setAttribute("aria-current", dotIndex === activeExperience ? "true" : "false");
-                });
-            }
-
-            function queueNextExperience() {
-                window.clearInterval(experienceTimer);
-                experienceTimer = window.setInterval(() => showExperience(activeExperience + 1), 6200);
-            }
-
-            experienceSlides.forEach((_, index) => {
-                const dot = document.createElement("button");
-                dot.className = "experience-dot";
-                dot.type = "button";
-                dot.setAttribute("aria-label", `Show experience ${index + 1}`);
-                dot.addEventListener("click", () => {
-                    showExperience(index);
-                    queueNextExperience();
-                });
-                experienceDotsContainer.appendChild(dot);
-            });
-
-            document.getElementById("prevExperience").addEventListener("click", () => {
-                showExperience(activeExperience - 1);
-                queueNextExperience();
-            });
-
-            document.getElementById("nextExperience").addEventListener("click", () => {
-                showExperience(activeExperience + 1);
-                queueNextExperience();
-            });
-
             typeInterest();
-            showExperience(0);
-            queueNextExperience();
         </script>
+        <script src="js/hero-binary.js" defer></script>
+        <script src="js/experience-timeline.js" defer></script>
+        <script src="js/learn-more.js" defer></script>
     </body>
 </html>

@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="420" viewBox="0 0 800 420" role="img" aria-label="Cybersecurity placeholder">
+<defs><linearGradient id="bg" x2="1" y2="1"><stop stop-color="#12284c"/><stop offset="1" stop-color="#32618b"/></linearGradient><pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" fill="none" stroke="#b6cee0" stroke-opacity=".12"/></pattern></defs>
+<path fill="url(#bg)" d="M0 0h800v420H0z"/><path fill="url(#grid)" d="M0 0h800v420H0z"/>
+<circle cx="670" cy="115" r="130" fill="#91b6ce" opacity=".08"/>
+<text x="55" y="140" fill="#a8cbdc" font-family="Arial, sans-serif" font-size="66">[ ]</text>
+<text x="55" y="265" fill="#fff" font-family="Arial, sans-serif" font-size="44" font-weight="700">Cybersecurity</text>
+<text x="55" y="310" fill="#c2d5e4" font-family="Arial, sans-serif" font-size="23">A new focus</text>
+<text x="55" y="380" fill="#9db8ce" font-family="Arial, sans-serif" font-size="13" letter-spacing="3">IMAGE PLACEHOLDER</text></svg>

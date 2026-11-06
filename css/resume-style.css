@@ -1,0 +1,309 @@
+:root {
+    color-scheme: light;
+    --ink: #242d28;
+    --pine: #234739;
+    --paper: #faf8f1;
+    font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+    color: var(--ink);
+    background: #dfc29d;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+.resume-bar {
+    background: var(--paper);
+    border-bottom: 1px solid #47372326;
+}
+
+.resume-nav {
+    width: min(100% - 2rem, 74rem);
+    min-height: 4.25rem;
+    margin-inline: auto;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
+    align-items: center;
+    gap: .75rem;
+}
+
+.resume-nav h1 {
+    margin: 0;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.55rem;
+    font-weight: 400;
+}
+
+.resume-actions {
+    justify-self: end;
+    display: flex;
+    gap: .5rem;
+}
+
+.resume-nav a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 2.75rem;
+    border-radius: 6px;
+    font-size: .9rem;
+    font-weight: 650;
+    text-decoration: none;
+}
+
+.home-link {
+    justify-self: start;
+    gap: .5rem;
+    color: var(--pine);
+}
+
+.home-link:hover {
+    text-decoration: underline;
+    text-underline-offset: .25em;
+}
+
+.pdf-link {
+    padding-inline: .85rem;
+    color: #fff;
+    background: var(--pine);
+}
+
+.pdf-link .icon {
+    display: none;
+}
+
+.pdf-link:hover {
+    background: #325e4d;
+}
+
+.download-link {
+    width: 2.75rem;
+    border: 1px solid #c7ccc1;
+    color: var(--pine);
+}
+
+.download-link:hover {
+    background: #e7eae1;
+}
+
+.resume-nav a:focus-visible {
+    outline: 2px solid var(--pine);
+    outline-offset: 3px;
+}
+
+.icon {
+    width: 1.15rem;
+    height: 1.15rem;
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+.desk {
+    min-height: calc(100vh - 4.25rem);
+    padding: .875rem 1rem 4rem;
+    background-color: #dfc29d;
+    background-image:
+        linear-gradient(105deg, #fff2d54d, transparent 58%, #80502420),
+        repeating-linear-gradient(0deg, transparent 0 4px, #82522212 5px, transparent 7px 12px, #fff1cd30 13px, transparent 15px 23px),
+        repeating-linear-gradient(0deg, #80502426 0 1px, transparent 2px 142px, #fff1cd33 143px 144px);
+}
+
+.print-station {
+    --sheet-width: min(86%, 40rem);
+    --slot-height: 1.35rem;
+    --printer-lip: .75rem;
+    --printer-border: 1px;
+    position: relative;
+    isolation: isolate;
+    width: min(100%, 49rem);
+    margin-inline: auto;
+}
+
+.printer {
+    position: relative;
+    z-index: 2;
+}
+
+.printer-feed {
+    width: 70%;
+    height: 1.3rem;
+    margin-inline: auto;
+    border: 1px solid #435f51;
+    border-radius: 8px 8px 0 0;
+    background: linear-gradient(#728879, #354c40);
+    box-shadow: inset 0 2px #ffffff28;
+}
+
+.printer-body {
+    padding-bottom: var(--printer-lip);
+    border: var(--printer-border) solid #253d32;
+    border-radius: 12px;
+    background: linear-gradient(#354d41, #273c33);
+    box-shadow: 0 9px 16px #38291738, 0 24px 35px -18px #3525158a;
+}
+
+.printer-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 3.45rem;
+    padding-inline: 5%;
+    border-radius: 11px 11px 0 0;
+    border-bottom: 1px solid #1d3329;
+    background: linear-gradient(175deg, #637e6e, #3c584a);
+    box-shadow: inset 0 1px #ffffff55;
+}
+
+.printer-vents {
+    width: 4.5rem;
+    height: .7rem;
+    border-radius: 2px;
+    background: repeating-linear-gradient(90deg, #243e33 0 2px, transparent 2px 6px);
+}
+
+.printer-light {
+    width: .5rem;
+    height: .5rem;
+    border-radius: 50%;
+    background: #ddf69b;
+    box-shadow: 0 0 7px #daf6a08c, 0 0 0 4px #263f34;
+}
+
+.printer-slot {
+    position: relative;
+    width: min(92%, 42rem);
+    height: var(--slot-height);
+    margin: .6rem auto 0;
+    border-radius: 5px;
+    background: #15251f;
+    box-shadow: inset 0 3px 5px #0c1914, 0 1px #ffffff25;
+}
+
+.printer-slot::after {
+    content: "";
+    position: absolute;
+    inset: auto 3% 2px;
+    height: 2px;
+    background: #51675b;
+}
+
+.print-output {
+    position: relative;
+    z-index: 3;
+    /* Clip the moving sheet at the slot's center, above the printer lip. */
+    margin-top: calc(-1 * (var(--printer-border) + var(--printer-lip) + var(--slot-height) / 2));
+    clip-path: inset(0 -32px -44px);
+}
+
+.resume-sheet {
+    display: block;
+    width: var(--sheet-width);
+    height: auto;
+    margin-inline: auto;
+    border: 1px solid #baaa9266;
+    background: white;
+    box-shadow: 0 4px 8px #432e2126, 0 18px 28px #432e212e;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .resume-sheet {
+        animation: paper-feed 2.65s .2s both;
+    }
+}
+
+@keyframes paper-feed {
+    0% { transform: translateY(-100%); }
+    20% { transform: translateY(-84%); }
+    24% { transform: translateY(-84%); }
+    55% { transform: translateY(-46%); }
+    60% { transform: translateY(-46%); }
+    100% { transform: translateY(0); }
+}
+
+@media (min-width: 68rem) {
+    .desk-pencil {
+        position: absolute;
+        top: 13.5rem;
+        left: -3.1rem;
+        width: .8rem;
+        height: 10rem;
+        border-radius: 3px 3px 0 0;
+        background:
+            linear-gradient(90deg, #42290735, transparent 45%, #fff1c744 55%, #42290728),
+            linear-gradient(#9a4e47 0 10%, #c6c1ac 10% 18%, #b78024 18%);
+        box-shadow: 3px 4px 5px #4e311d38;
+        transform: rotate(15deg);
+    }
+
+    .desk-pencil::after {
+        content: "";
+        position: absolute;
+        inset: 100% 0 auto;
+        height: 1.15rem;
+        background: linear-gradient(#ead0a2 75%, #352f2b 75%);
+        clip-path: polygon(0 0, 100% 0, 50% 100%);
+    }
+
+    .desk-notepad {
+        position: absolute;
+        top: 15rem;
+        right: -7rem;
+        width: 8.5rem;
+        height: 10.25rem;
+        border: 1px solid #71583f30;
+        border-top: .7rem solid #817f5f;
+        border-radius: 3px;
+        background: repeating-linear-gradient(#f9f4df 0 17px, #d9d4bd 18px 19px);
+        box-shadow: 0 3px #d8ccb2, 0 5px #c6b99b, 5px 12px 15px #4e311d30;
+        transform: rotate(10deg);
+    }
+}
+
+@media (max-width: 40rem) {
+    .print-station {
+        --sheet-width: 94%;
+    }
+
+    .printer-top {
+        height: 2.65rem;
+    }
+
+    .printer-slot {
+        width: 97%;
+    }
+}
+
+@media (max-width: 30rem) {
+    .resume-nav {
+        width: calc(100% - 1.5rem);
+        gap: .375rem;
+    }
+
+    .resume-nav h1 {
+        font-size: 1.2rem;
+    }
+
+    .resume-actions {
+        gap: .25rem;
+    }
+
+    .pdf-link {
+        width: 2.75rem;
+        padding: 0;
+    }
+
+    .pdf-link span {
+        display: none;
+    }
+
+    .pdf-link .icon {
+        display: block;
+    }
+}
